@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .body{
+            border: 5px solid yellow;
+            margin: 2%;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        .listterm{
+            margin-left: 2.5vw;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .listdata{
+            margin-left: 5vw;
+        }
+        .olist{
+            margin-left: 5%;
+        }
+        #code1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: lightgray;
+            height: 5vh;
+            width: fit-content;
+            padding: 0px 10px;
+            font-size: larger;
+            margin-top: 1%;
+        }
+        #code2{
+            border: 1px solid black;
+            margin-left: 7.5vw;
+            font-size: large;
+            background-color: lightgray;
+            margin-right: 1vw;
+            margin-bottom: 1vh;
+        }
+        .pink{
+            color:rgba(177,38,76,255) ;
+        }
+        .gray{
+            color: gray;
+        }
+        .white{
+            color: white;
+        }
+        .ulist{
+            margin-left: 5%;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="heading"><h1>HTML ELEMENTS</h1></div>
+    <hr><br>
+    <dl class="list">
+        <dt class="listterm">ELEMENTS</dt>
+        <br>
+        <dd class="listdata">An <strong>HTML Element</strong> consists of a <strong>start tag, content,</strong> and an <strong>end tag,</strong> which together define the element&#39;s structure and functionality. Elements are the basic building blocks of a webpage and can represent different types of content, such as text, links, images, or headings.</dd>
+        <br>
+        <dd class="listdata">For example, the &lt;p&gt; element for paragraphs includes opening and closing tags with text content in between.</dd>
+        <br>
+        <dd class="listdata"><h4>SYNTAX:</h4></dd>
+
+        <dd class="listdata" id="code1">
+            <code><b>&lt;tagname&gt;</b>Your Contents...<b>&lt;/tagname&gt;</b></code>
+        </dd>
+        <br><br>
+        <dt class="listterm">HTML ELEMENT CODE EXAMPLE:</dt>
+        <br>
+        <dd class="listdata">In this example &lt;p&gt; is a starting tag,&lt;/p&gt; is an ending tag and it contains some content between the tags, which form an element.</dd>
+        <br>
+        <dd class="listdata" id="code2">
+            <code>
+                <ol class="olist">
+                    <br>
+                    <li><span class="gray">&lt;!-- HTML code to illustrate HTML elements --&gt;</span></li>
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+                    <li><span class="pink">&lt;html&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;head&gt;</span></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML elements<span class="pink">&lt;/title&gt;</span></li>
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;body&gt;</span></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span>This is an HTML page!<span class="pink">&lt;/p&gt;</span></li>
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br><br>
+        <dt class="listterm">SOME KEY POINTS ABOUT HTML ELEMENTS</dt>
+        <br>
+        <dd class="listdata">
+            <ol>
+                <li><b>Syntax:</b>
+                <ul class="ulist">
+                    <li>An opening tag indicates where the content begins: &lt;tagname&gt;.</li>
+                    <li>A closing tag indicates where the content ends: &lt;/tagname&gt;.</li>
+                    <li>The actual content resides between the opening and closing tags.</li>
+                </ul>
+                </li>
+                <br>
+                <li><b>Case Sensitivity:</b>
+                <ul class="ulist">
+                    <li>HTML tags are not case-sensitive. For example, &lt;B&gt; and &lt;b&gt; both represent bold text.</li>
+                    <li>However, it&#39;s a best practice to use lowercase tags for consistency and readability.</li>
+                </ul>
+                </li>
+            </ol>
+        </dd>
+        <br><br>
+        <dt class="listterm">NESTED HTML ELEMENTS</dt>
+        <br>
+        <dd class="listdata">Nested HTML Elements occur when one element is placed inside another, creating a hierarchical structure. This structure is crucial for organizing content on web pages effectively, ensuring that different elements relate logically and visually to each other.</dd>
+        <br>
+        <dd class="listdata">Example: Here, the &lt;html&gt; tag contains the &lt;head&gt; and &lt;body&gt; tags, forming a nested structure.</dd>
+        <br>
+        <dd class="listdata" id="code2">
+            <code>
+                <ol class="olist">
+                    <br>
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+                    <li><span class="pink">&lt;html&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;head&gt;</span></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML Elements<span class="pink">&lt;/title&gt;</span></li>
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;body </span><span class="green">style</span><span class="yellow">="text-align: center"</span><span class="pink">&gt;</span></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h1&gt;</span>HTML Page <span class="pink">&lt;/h1&gt;</span></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span>Computer Science Portal<span class="pink">&lt;/p&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+        <dd class="listdata">Here, the &lt;html&gt; tag contains the &lt;head&gt; and &lt;body&gt;. The &lt;head&gt; and &lt;body&gt; tag contain other elements so it is called a nested element.</dd>
+        <br><br>
+        <dt class="listterm">NECESSARY TO ADD AN END TAG</dt>
+        <br>
+        <dd class="listdata">For non-empty HTML elements, if you forget to add a closing or end tag, modern browsers may automatically add it in some cases.</dd>
+        <br>
+        <dd class="listdata">However, this can cause issues when you add additional HTML elements later on. Therefore, it is best practice to always include the closing tag for non-void HTML elements.</dd>
+        <br><br>
+        <dt class="listterm">HTML EMPTY ELEMENT</dt>
+        <br><dd class="listdata">HTML Elements without any content i.e., that do not print anything are called Empty elements. Empty HTML elements do not have an ending tag. For instance. &lt;br&gt;, &lt;hr&gt;, &lt;link&gt;, &lt;input&gt; etc are HTML elements.</dd>
+        <br>
+        <dd class="listdata">Example: In this example &lt;br&gt; tag doesn&#39;t print anything. It is used as a line break that breaks the line between &lt;h2&gt; and &lt;p&gt; tags.</dd>
+        <br>
+        <dd class="listdata" id="code2">
+            <code>
+                <ol class="olist">
+                    <br>
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+                    <li><span class="pink">&lt;html&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;head&gt;</span></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Empty HTML Elements<span class="pink">&lt;/title&gt;</span></li>
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;body&gt;</span></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2&gt;</span>HTML Page<span class="pink">&lt;/h2&gt;</span></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;br&gt;</span></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span>Hello Everyone.<span class="pink">&lt;/p&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br><br>
+        <dt class="listterm">BLOCK-LEVEL ELEMENTS AND INLINE ELEMENTS</dt>
+        <br>
+        <dd class="listdata">In HTML, elements are broadly categorized into two main types based on how they display in the document layout: block-level elements and inline elements.</dd>
+        <br>
+        <dd class="listdata">
+            <ol class="olist">
+                <li><b>Block-Level Elements:</b> Block-level elements typically start on a new line and take up the full width available to them, regardless of their actual content width. This means they stack vertically and can contain other block-level elements as well as inline elements. Here are some examples of block-level elements: <br><br>
+                <h4>Examples:</h4><br>
+                <ul class="ulist">
+                    <li>&lt;div&gt;: A general-purpose container for other elements.</li>
+                    <li>&lt;p&gt;: Defines a paragraph.</li>
+                    <li>&lt;h1&gt;,&lt;h2&gt;,...,&lt;h6&gt;: Heading elements of different levels.</li>
+                    <li>&lt;ol&gt;,&lt;ul&gt;: Ordered and unordered lists.</li>
+                    <li>&lt;table&gt;: Defines a table.</li>
+                    <li>&lt;form&gt;: Used for HTML forms to collect user inputs.</li>
+                    <li>&lt;section&gt;,&lt;article&gt;,&lt;nav&gt;,&lt;header&gt;,&lt;footer&gt;: Semantic elements that define areas of a webpage.</li>  
+                </ul>
+                </li>
+                <br>
+                <li><b>Inline Elements:</b> Inline elements do not start on a new line; they appear on the same line as adjacent content, as long as there is space. They only take up as much width as their content requires. Inline elements are typically used within block-level elements to add content or style. Here are some examples of inline elements: <br><br>
+                <h4>Examples:</h4><br>
+                <ul class="ulist">
+                    <li>&lt;span&gt;: A general-purpose inline container for phrasing content.</li>
+                    <li>&lt;a&gt;: Creates hyperlinks.</li>
+                    <li>&lt;img&gt;: Embeds an image.</li>
+                    <li>&lt;strong&gt;,&lt;b&gt;,&lt;i&gt;: Used for strong emphasis, bold text, and italic text respectively.</li>
+                    <li>&lt;br&gt;: Inserts a line break within text.</li>
+                    <li>&lt;input&gt;: Creates interactive controls for forms.</li>
+                </ul>
+            </li>
+            <br>
+            </ol>
+        </dd>
+    </dl>
+    <br>
+</body>
+</html>

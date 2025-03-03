@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .body{
+            border: 5px solid yellow;
+            margin: 2%;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        .listterm{
+            margin-left: 2.5vw;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .listdata{
+            margin-left: 5vw;
+        }
+        .listdata2{
+            margin-left: 7.5vw;
+        }
+        .olist{
+            margin-left: 5%;
+        }
+        .ulist{
+            margin-left: 2.5%;
+        }
+        .code2{
+            border: 1px solid black;
+            margin-left: 7.5vw;
+            font-size: large;
+            background-color: lightgray;
+            margin-right: 1vw;
+            margin-bottom: 1vh;
+        }
+        .code1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: lightgray;
+            height: fit-content;
+            width: fit-content;
+            padding: 0px 10px;
+            font-size: larger;
+            margin-top: 1%;
+        }
+        .pink{
+            color:rgba(177,38,76,255) ;
+        }
+        .green{
+            color: rgba(122,197,43,255);
+        }
+        .yellow{
+            color: darkgoldenrod;
+        }
+        .gray{
+            color: gray;
+        }
+        .cyan{
+            color: darkcyan;
+        }
+        .white{
+            color: white;
+        }
+        .tableheader{
+            padding: 5%;
+            font-size: large;
+        }
+        .tabledata{
+            padding: 5%;
+            text-align: center;
+            vertical-align: center;
+        }
+        .table{
+            background-color: lightgray;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .image
+        {
+            border: 2.5px solid yellow;
+        }
+        .imagediv
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .listdata3{
+            font-weight: normal;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="heading">
+        <h1>HTML FORMS</h1>
+    </div>
+    <hr><br>
+    <dl class="list">
+        <dt class="listterm">HTML FORMS</dt>
+        <br>
+
+        <dd class="listdata">
+            HTML Forms use the &lt;form&gt; tag to collect user input through various interactive controls. These controls range from text fields, numeric inputs, and email fields to password fields, checkboxes, radio buttons, and submit buttons.
+            <br><br>
+            <b>SYNTAX: </b>
+            <span class="code1">
+                <code>
+                    &lt;form&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;!--form elements--&gt;<br>&lt;/form&gt;
+                </code>
+            </span>
+        </dd>
+        <br>
+
+        <dt class="listterm">FORM ELEMENTS</dt>
+        <br>
+
+        <dd class="listdata">
+            The HTML <form> comprises several elements, each serving a unique purpose. For instance, the &lt;label&gt; element defines labels for other &lt;form&gt; elements. On the other hand, the &lt;input&gt; element is versatile and can be used to capture various types of input data such as text, password, email, and more simply by altering its type attribute.
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <table class="table" border="1">
+                <tr>
+                    <th class="tableheader" width="40%">ELEMENTS</th>
+                    <th class="tableheader">DESCRIPTION</th>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;label&gt;</td>
+                    <td class="tabledata">It defines labels for <form> elements.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;input&gt;</td>
+                    <td class="tabledata">It is used to get input data from the form in various types such as text, password, email, etc by changing its type.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;button&gt;</td>
+                    <td class="tabledata">It defines a clickable button to control other elements or execute a functionality.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;select&gt;</td>
+                    <td class="tabledata">It is used to create a drop-down list.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;textarea&gt;</td>
+                    <td class="tabledata">It is used to get input long text content.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;fieldset&gt;</td>
+                    <td class="tabledata">It is used to draw a box around other form elements and group the related data.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;legend&gt;</td>
+                    <td class="tabledata">It defines a caption for fieldset elements
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;datalist&gt;</td>
+                    <td class="tabledata">It is used to specify pre-defined list options for input controls.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;output&gt;</td>
+                    <td class="tabledata">It displays the output of performed calculations.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;option&gt;</td>
+                    <td class="tabledata">It is used to define options in a drop-down list.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;optgroup&gt;</td>
+                    <td class="tabledata">It is used to define group-related options in a drop-down list.
+                    </td>
+                </tr>
+            </table>
+        </dd>
+        <br>
+
+        <dt class="listterm">COMMONLY USED INPUT TYPES IN HTML FORMS</dt>
+        <br>
+
+        <dd class="listdata">In HTML forms, various input types are used to collect different types of data from users. Here are some commonly used input types:
+
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <table class="table" border="1">
+                <tr>
+                    <th class="tableheader">INPUT TYPE</th>
+                    <th class="tableheader">DESCRIPTION</th>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;input type="text"&gt;</td>
+                    <td class="tabledata">Defines a one-line text input field</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;input type="password"&gt;</td>
+                    <td class="tabledata">Defines a password field
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;input type="submit"&gt;</td>
+                    <td class="tabledata">Defines a submit button
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;input type="reset"&gt;</td>
+                    <td class="tabledata">Defines a reset button
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;input type="radio"&gt;</td>
+                    <td class="tabledata">Defines a radio button
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;input type="email"&gt;</td>
+                    <td class="tabledata">Validates that the input is a valid email address.
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;input type="number"&gt;</td>
+                    <td class="tabledata">Allows the user to enter a number. You can specify min, max, and step attributes for range.
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;input type="checkbox"&gt;</td>
+                    <td class="tabledata">Used for checkboxes where the user can select multiple options.
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;input type="date"&gt;</td>
+                    <td class="tabledata">Allows the user to select a date from a calendar.
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;input type="time"&gt;</td>
+                    <td class="tabledata">Allows the user to select a time.
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;input type="file"&gt;</td>
+                    <td class="tabledata">Allows the user to select a file to upload.
+
+                    </td>
+                </tr>
+            </table>
+        </dd>
+        <br>
+
+        <dt class="listterm">HTML FORMS EXAMPLE</dt>
+        <br>
+
+        <dd class="listdata">
+            <br>
+            This HTML form collects user personal information such as username and password with a button to submit the form.
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML Forms<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2&gt;</span>HTML Forms<span class="pink">&lt;/h2&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;form&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt; label</span><span class="green"> for</span><span class="white">=</span><span class="yellow">"username"</span><span class="pink"> &gt;</span>Username:<span class="pink">&lt;/label&gt;&lt;br&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt; input</span><span class="green"> type</span><span class="white">=</span><span class="yellow">"text"</span><span class="green"> id</span><span class="white">=</span><span class="yellow">"username"</span><span class="green"> name</span><span class="white">=</span><span class="yellow">"username"</span><span class="pink">&gt;&lt;/br&gt;&lt;br&gt;</span></li>
+
+                    <li></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt; label</span><span class="green"> for</span><span class="white">=</span><span class="yellow">"password"</span><span class="pink"> &gt;</span>Password:<span class="pink">&lt;/label&gt;&lt;br&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt; input</span><span class="green"> type</span><span class="white">=</span><span class="yellow">"text"</span><span class="green"> id</span><span class="white">=</span><span class="yellow">"password"</span><span class="green"> name</span><span class="white">=</span><span class="yellow">"password"</span><span class="pink">&gt;&lt;/br&gt;&lt;br&gt;</span></li>
+
+                    <li></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;input </span><span class="green">type</span><span class="white">=</span><span class="yellow">"submit" </span><span class="green">value</span><span class="white">=</span><span class="yellow">"Submit"</span><span class="pink">&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/form&gt;</span></li>
+
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>OUTPUT:</b> 
+            <br>
+            <div class="listdata2 imagediv">
+                <img src="form1.png" alt="form1" class="image">
+            </div>
+        </dd>
+        <br>
+    </dl>
+    <br>
+</body>
+</html>

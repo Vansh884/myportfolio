@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .navigation{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: brown;
+            border: 5px solid yellow;
+            border-radius: 2px;
+            /* height: 100vh; */
+            padding: 5%;
+        }
+        .item{
+            display: flex;
+            border-radius: 20px;
+            padding: 10%;
+            margin: 5%;
+            font-size: 16px;
+            transition: transform 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out;
+                       
+        }
+        .item:hover{
+            background-color: yellow;
+            /* border: 1px solid yellow; */
+            border-radius: 20px;
+            color: black;
+
+            transform:scale(1.1);
+        }
+        .link{
+            color: white;
+            text-decoration: none;
+        }
+        .item:hover .link{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li class="item"><a class="link" href="HTML.html" target="frame3">HTML</a></li>
+            <li class="item"><a class="link" href="structure.html" target="frame3">STRUCTURE OF HTML</a></li>
+            <li class="item"><a href="elements.html" class="link" target="frame3">HTML ELEMENTS</a></li>
+            <li class="item"><a href="attributes.html" class="link" target="frame3">HTML ATTRIBUTES</a></li>
+            <li class="item"><a href="headings.html" target="frame3" class="link">HTML HEADINGS</a></li>
+            <li class="item"><a href="paragraph.html" class="link" target="frame3">HTML PARAGRAPHS</a></li>
+            <li class="item"><a href="formatting.html" class="link" target="frame3">HTML TEXT FORMATTING</a></li>
+            <li class="item"><a href="entities.html" class="link" target="frame3">HTML ENTITIES</a></li>
+            <li class="item"><a href="hyperlink.html" target="frame3" class="link">HTML LINKS</a></li>
+            <li class="item"><a href="list.html" class="link" target="frame3">HTML LISTS</a></li>
+            <li class="item"><a href="table.html" class="link" target="frame3">HTML TABLES</a></li>
+            <li class="item"><a href="form.html" class="link" target="frame3">HTML FORM</a></li>
+            <li class="item"><a href="image.html" class="link" target="frame3">HTML IMAGES</a></li>
+        </ul>
+    </div>
+</body>
+</html>

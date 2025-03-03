@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .body{
+            border: 5px solid yellow;
+            margin: 2%;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        .listterm{
+            margin-left: 2.5vw;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .listdata{
+            margin-left: 5vw;
+        }
+        .listdata2{
+            margin-left: 7.5vw;
+        }
+        .olist{
+            margin-left: 5%;
+        }
+        .ulist{
+            margin-left: 2.5%;
+        }
+        .code2{
+            border: 1px solid black;
+            margin-left: 7.5vw;
+            font-size: large;
+            background-color: lightgray;
+            margin-right: 1vw;
+            margin-bottom: 1vh;
+        }
+        .code1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: lightgray;
+            height: 5vh;
+            width: fit-content;
+            padding: 0px 10px;
+            font-size: larger;
+            margin-top: 1%;
+        }
+        .pink{
+            color:rgba(177,38,76,255) ;
+        }
+        .green{
+            color: rgba(122,197,43,255);
+        }
+        .yellow{
+            color: darkgoldenrod;
+        }
+        .gray{
+            color: gray;
+        }
+        .cyan{
+            color: darkcyan;
+        }
+        .white{
+            color: white;
+        }
+        .tableheader{
+            padding: 5%;
+            font-size: large;
+        }
+        .tabledata{
+            padding: 5%;
+            text-align: center;
+            vertical-align: center;
+        }
+        .table{
+            background-color: lightgray;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .image
+        {
+            border: 2.5px solid yellow;
+        }
+        .imagediv
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="heading"><h1>HTML TEXT FORMATTING</h1></div>
+    <hr><br>
+    <dl class="list">
+        <dt class="listterm">
+            HTML TEXT FORMATTING
+        </dt>
+        <br>
+        <dd class="listdata">
+            HTML text formatting refers to the use of specific HTML tags to modify the appearance and structure of text on a webpage. It allows you to style text in different ways, such as making it bold, italic, underlined, highlighted, or struck-through.
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            CATEGORIES OF HTML TEXT FORMATTING
+        </dt>
+        <br>
+
+        <dd class="listdata">
+            HTML text formatting can be divided into two main categories: <b>Logical Tags</b> and <b>Physical Tags</b>.
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <ol>
+                <li><b>LOGICAL TAGS</b>
+                    Logical tags convey the meaning or importance of the text without necessarily altering its visual appearance. These tags help browsers, search engines, and assistive technologies understand the purpose of the text.
+                    <br><br>
+                    <ul class="ulist">
+                        <li>
+                            <b>&lt;em&gt;: </b>
+                            Emphasizes text, typically rendered in italics. It implies that the text carries special importance or requires emphasis.
+                        </li>
+                        <li>
+                            <b>&lt;strong&gt;: </b>
+                            Marks text as important, often displayed in bold. It implies the content is of strong importance.
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <b>PHYSICAL TAGS</b>
+                    Physical tags directly affect how text looks on the webpage by changing the font, size, or style.
+                    <br><br>
+                    <ul class="ulist">
+                        <li>
+                            <b>&lt;b&gt;: </b>
+                            Displays text in bold without implying importance.
+                        </li>
+                        <li>
+                            <b>&lt;i&gt;: </b>
+                            Italicizes text without any implied emphasis.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            Here&#39;s a list of commonly used HTML text formatting tags and their description:
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <table class="table" border="1">
+                <tr>
+                    <th class="tableheader" width="50%">TAGS</th>
+                    <th class="tableheader">DESCRIPTION</th>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;i&gt;</td>
+                    <td class="tabledata">Showcases italicized text.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;small&gt;</td>
+                    <td class="tabledata">Renders text in a smaller font size.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;ins&gt;</td>
+                    <td class="tabledata">Highlights added or inserted text.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;sub&gt;</td>
+                    <td class="tabledata">Creates subscript text.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;strong&gt;</td>
+                    <td class="tabledata">Emphasizes text with importance, often in bold.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;b&gt;</td>
+                    <td class="tabledata">Displays text in a bold format.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;mark&gt;</td>
+                    <td class="tabledata">Accentuates text with a background highlight.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;del&gt;</td>
+                    <td class="tabledata">Strikes through text to signify deletion.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;em&gt;</td>
+                    <td class="tabledata">Adds emphasis to text, commonly styled as italic.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;sup&gt;</td>
+                    <td class="tabledata">Formats text as superscript.
+                    </td>
+                </tr>
+            </table>
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            HTML FORMATTING ELEMENTS
+        </dt>
+        <br>
+
+        <dd class="listdata">
+            <ol>
+                <li>
+                    <b>&lt;i&gt; - ITALICIZES TEXT</b>
+                    <br><br>
+                    Use the &lt;&gt; tag to display text in italics without implying emphasis.
+                    <span class="code1">
+                        <code>
+                            &lt;i&gt;This is italic text.&lt;/i&gt;
+                        </code>
+                    </span>
+                </li>
+                <br><br>
+                <li>
+                    <b>&lt;small&gt; - REDUCES THE FONT SIZE OF THE TEXT</b>
+                    <br><br>
+                    The &lt;small&gt; tag renders text in a smaller font than the surrounding text.
+                    <span class="code1">
+                        <code>
+                            &lt;small&gt;This text is smaller than the rest.&lt;/small&gt;
+                        </code>
+                    </span>
+                </li>
+                <br><br>
+                <li>
+                    <b>&lt;ins&gt; - HIGHLIGHTS THE INSERTED TEXT</b>
+                    <br><br>
+                    The &lt;ins&gt; tag marks text as newly added or inserted, often displayed with an underline.
+                    <span class="code1">
+                        <code>
+                            &lt;ins&gt;This is inserted text.&lt;/ins&gt;
+                        </code>
+                    </span>
+                </li>
+                <br><br>
+                <li>
+                    <b>&lt;sub&gt; - DISPLAYS SUBSCRIPT TEXT</b>
+                    <br><br>
+                    Use the &lt;sub&gt; tag for subscripted text, often used in chemical formulas or footnotes.
+                    <span class="code1">
+                        <code>
+                            H&lt;sub&gt;2&lt;/sub&gt;O
+                        </code>
+                    </span>
+                </li>
+                <br><br>
+                <li>
+                    <b>&lt;strong&gt; - EMPHASIZES IMPORTANT TEXT, OFTEN RENDERED IN BOLD</b>
+                    <br><br>
+                    The &lt;strong&gt; tag is semantically meaningful and indicates that the text is of high importance.
+                    <span class="code1">
+                        <code>
+                            &lt;strong&gt;This text is bold and important.&lt;/strong&gt;
+                        </code>
+                    </span>
+                </li>
+                <br><br>
+                <li>
+                    <b>&lt;b&gt; - MAKES TEXT BOLD</b>
+                    <br><br>
+                    The &lt;b&gt; tag visually makes the text bold but does not imply any special significance.
+                    <span class="code1">
+                        <code>
+                            &lt;b&gt;This is bold text.&lt;/b&gt;
+                        </code>
+                    </span>
+                </li>
+                <br><br>
+                <li>
+                    <b>&lt;mark&gt; - HIGHLIGHTS TEXT WITH A BACKGROUND COLOR</b>
+                    <br><br>
+                    The &lt;mark&gt; tag highlights text with a background color, similar to using a highlighter on paper.
+                    <span class="code1">
+                        <code>
+                            &lt;mark&gt;This text is highlighted.&lt;/mark&gt;
+
+                        </code>
+                    </span>
+                </li>
+                <br><br>
+                <li>
+                    <b>&lt;del&gt; - STRIKES THROUGH TEXT</b>
+                    <br><br>
+                    The &lt;del&gt; tag is used to show that text has been deleted or is no longer relevant.
+                    <span class="code1">
+                        <code>
+                            &lt;del&gt;This text is crossed out.&lt;/del&gt;
+                        </code>
+                    </span>
+                </li>
+                <br><br>
+                <li>
+                    <b>&lt;em&gt; - EMPHASIZES TEXT, TYPICALLY ITALICIZED</b>
+                    <br><br>
+                    The &lt;em&gt; tag is used for emphasized text and is usually rendered in italics to highlight importance.
+                    <span class="code1">
+                        <code>
+                            <em>This text is emphasized.</em>
+                        </code>
+                    </span>
+                </li>
+                <br><br>
+                <li>
+                    <b>&lt;sup&gt; - DISPLAYS SUPERSCRIPT TEXT</b>
+                    <br><br>
+                    Use the &lt;sup&gt; tag to show superscripted text, commonly used in exponents or footnotes.
+                    <span class="code1">
+                        <code>
+                            E = mc&lt;sup&gt;2&lt;/sup&gt;
+                        </code>
+                    </span>
+                </li>
+            </ol>
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            EXAMPLES OF BASIC HTML TEXT FORMATTING
+        </dt>
+        <br>
+
+        <dd class="listdata">
+            <b>EXAMPLE 1: BASIC TEXT FORMATTING</b>
+            <br>
+            In this example we demonstrates various text formatting tags: &lt;strong&gt; for important and bold text, &lt;em&gt; for emphasized and italic text, &lt;b&gt; for bold text, &lt;i&gt; for italic text, and &lt;mark&gt; for highlighted text.
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Text Formatting Example<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;strong&gt;</span>Strong: <span class="pink">&lt;/strong&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This text is important and bold.</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;em&gt;</span>Emphasized: <span class="pink">&lt;/em&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This text is emphasized and italic.</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;b&gt;</span>Bold: <span class="pink">&lt;/b&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This text is bold.</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;i&gt;</span>Italic: <span class="pink">&lt;/i&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This text is italic.</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;mark&gt;</span>Marked: <span class="pink">&lt;/mark&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This text is highlighted.</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+                    
+
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>OUTPUT:</b>
+            <br>
+            <div class="imagediv">
+                <img src="formatting1.png" alt="formatting example" class="image">
+            </div>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>EXAMPLE 2: COMBINING LOGICAL AND PHYSICAL TAGS</b>
+            <br>
+            This example shows how logical and physical tags can be combined for enhanced text formatting.
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Advanced Text Formatting<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;strong&gt;&lt;em&gt;</span>very important<span class="pink">&lt;em&gt;&lt;/strong&gt;</span>message.</li>
+
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The chemical formula of water is H</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;sub&gt;</span>2<span class="pink">&lt;/sub&gt;</span>O.</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;del&gt;</span>Deleted text<span class="pink">&lt;/del&gt;</span> and</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;ins&gt;</span>inserted text<span class="pink">&lt;/ins&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are shown here.</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;small&gt;</span>Smaller text<span class="pink">&lt;/small&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can be used for disclaimers.</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E = mc</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;sup&gt;</span>2<span class="pink">&lt;/sup&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+                    
+
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>OUTPUT:</b>
+            <br>
+            <div class="imagediv">
+                <img src="formatting2.png" alt="text formatting 2" class="image">
+            </div>
+        </dd>
+        <br>
+    </dl>
+    <br>
+</body>
+</html>

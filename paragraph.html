@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .body{
+            border: 5px solid yellow;
+            margin: 2%;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        .listterm{
+            margin-left: 2.5vw;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .listdata{
+            margin-left: 5vw;
+        }
+        .listdata2{
+            margin-left: 7.5vw;
+        }
+        .olist{
+            margin-left: 5%;
+        }
+        .code2{
+            border: 1px solid black;
+            margin-left: 7.5vw;
+            font-size: large;
+            background-color: lightgray;
+            margin-right: 1vw;
+            margin-bottom: 1vh;
+        }
+        .code1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: lightgray;
+            height: 5vh;
+            width: fit-content;
+            padding: 0px 10px;
+            font-size: larger;
+            margin-top: 1%;
+        }
+        .pink{
+            color:rgba(177,38,76,255) ;
+        }
+        .green{
+            color: rgba(122,197,43,255);
+        }
+        .yellow{
+            color: darkgoldenrod;
+        }
+        .gray{
+            color: gray;
+        }
+        .cyan{
+            color: darkcyan;
+        }
+        .white{
+            color: white;
+        }
+        .tableheader{
+            padding: 5%;
+            font-size: large;
+        }
+        .tabledata{
+            padding: 5%;
+            text-align: center;
+            vertical-align: center;
+        }
+        .table{
+            background-color: lightgray;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .image
+        {
+            border: 2.5px solid yellow;
+        }
+        .imagediv
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="heading">
+        <h1>HTML PARAGRAPHS</h1>
+    </div>
+    <hr><br>
+
+    <dl class="list">
+        <dt class="listterm">
+            HTML PARAGRAPHS
+        </dt>
+        <br>
+
+        <dd class="listdata">
+            A <b>paragraph in HTML</b> is simply a block of text enclosed within the <b>&lt;p&gt; tag</b>. The <p> tag helps divide content into manageable, readable sections. It&#39;s the go-to element for wrapping text in a web page that is meant to be displayed as a distinct paragraph.
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>SYNTAX:</b>
+            <br>
+            <span class="code1">
+                <code>
+                    &lt;p&gt; Content &lt;/p&gt;
+                </code>
+            </span>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <h3>HOW HTML PARAGRAPHS ARE RENDERED ?</h3>
+            <br>
+            In HTML, when you wrap text inside the &lt;p&gt; tag, it automatically
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <ul>
+                <li>Adds space before and after the paragraph to visually separate it from other content.</li>
+                <li>Breaks the text into a single block, creating an easy-to-read section.</li>
+            </ul>
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            HTML PARAGRAPH CODE EXAMPLE
+        </dt>
+        <br>
+
+        <dd class="listdata">
+            <b>EXAMPLE 1: </b>
+            Here&#39;s an example showing two paragraphs in HTML
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>The &lt;p&gt; tag<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span>This is an HTML Page !<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span>This page demonstrates use of &lt;p&gt; tag !<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            PROPERTIES OF THE PARAGRAPH TAG
+        </dt>
+        <br>
+
+        <dd class="listdata">
+            <b>EXAMPLE 2: </b>
+            This example explains the HTML &lt;p&gt; tag having multiple lines.
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>The &lt;p&gt; tag<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span>This paragraph has multiple lines.</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But HTML reduces them to a single line,</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;omitting the carriage return we have used.</li>
+                        
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span>This paragraph has multiple spaces.</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; But HTML reduces them all to a single</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;omitting the carriage return we have used.</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;space, omitting the extra spaces and</li>
+                        
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>   
+        
+        <dd class="listdata">
+            <b>OUTPUT: </b>
+            <br>
+            <div class="imagediv">
+                <img class="image" src="paragraph.jpg" alt="multiline paragraph">
+            </div>
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            THE &lt;br&gt; TAG
+        </dt>
+        <br>
+
+        <dd class="listdata">
+            The HTML &lt;br&gt; tag element creates a line break, giving you a new line without starting a new paragraph. Use &lt;br&gt; when you want to move to the next line without beginning a whole new paragraph.
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>SYNTAX:</b>
+        </dd>
+
+        <dd class="listdata code1">
+            <code>
+                &lt;br&gt;
+            </code>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>EXAMPLE:</b>
+            This example explains the &lt;br&gt; tag inside the &lt;p&gt; tag to add the line-break.
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML Paragraph<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This paragraph has multiple</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;br /&gt;</span>lines. But HTML reduces them</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;br /&gt;</span>to a single line, omitting</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;br /&gt;</span>the carriage return we have used.</li>
+                        
+                        
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>OUTPUT:</b>
+            <br>
+            <div class="imagediv">
+                <img src="paragraph2.jpg" alt="br tag" class="image">
+            </div>
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            THE HORIZONTAL RULES &lt;hr&gt TAG
+        </dt>
+        <br>
+
+        <dd class="listdata">
+            The HTML &lt;hr&gt; tag is used to create a horizontal rule or line, visually separating content on a webpage. Use &lt;hr&gt; when you want to insert a horizontal line to signify a division between sections or elements, providing a clear visual break in the page.
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>SYNTAX:</b>
+        </dd>
+
+        <dd class="listdata code1">
+            <code>
+                &lt;hr&gt;
+            </code>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>EXAMPLE:</b>
+            In this example we will use the &lt;hr&gt; tag with an example by using &lt;p&gt; tag also.
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML Horizontal Rule Example<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h1&gt;</span>Welcome to My Website<span class="pink">&lt;/h1&gt;</span></li>
+
+                    <li></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This paragraph is used as </li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first paragraph for hr tag</li>
+                        
+                        
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;hr&gt;</span></li>
+
+                    <li></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This paragraph is used as </li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first paragraph for hr tag</li>
+                        
+                        
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>                    
+
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dt class="listterm">ALIGN ATTRIBUTE</dt>
+        <br>
+
+        <dd class="listdata">
+            The &lt;p&gt; tag specifically supports the alignment attribute and allows us to align our paragraphs in left, right, or center alignment. 
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>SYNTAX:</b>
+        </dd>
+
+        <dd class="listdata code1">
+            <code>
+                &lt;p align="value"&gt;
+            </code>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>
+                EXAMPLE:
+            </b> This example explains the align attribute to align the content in the &lt;p&gt; tag.
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML align Attribute<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p</span><span class="green"> align</span><span class="white">=</span><span class="yellow">"center"</span><span class="pink">&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paragraph One, Center Aligned</li>
+                        
+                        
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p</span><span class="green"> align</span><span class="white">=</span><span class="yellow">"left"</span><span class="pink">&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paragraph Two, Left Aligned</li>
+                        
+                        
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p</span><span class="green"> align</span><span class="white">=</span><span class="yellow">"right"</span><span class="pink">&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paragraph Three, Right Aligned</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/p&gt;</span></li>                                          
+
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dt class="listterm">THE &lt;pre&gt; TAG</dt>
+        <br>
+
+        <dd class="listdata">
+            The HTML &lt;pre&gt; tag is used for pre-formatted text. It keeps the original spaces and line breaks exactly as they are in the code. When you use &lt;pre&gt;, the text appears in a fixed-width font, preserving the formatting and layout just as it looks in the HTML code.
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>SYNTAX:</b>
+            <br>
+            <span class="code1">
+                <code>
+                    &lt;pre&gt; Content &lt;/pre&gt;
+                </code>
+            </span>
+            <br>
+            <b>EXAMPLE:</b>
+            This example explains the use of the &lt;pre&gt; tag in the &lt;p&gt; tag.
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML &lt;pre&gt; Tag<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;pre&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This paragraph has multiple</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lines. But it is displayed</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as it is unlike the paragraph</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tag</li>
+                        
+                        
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/pre&gt;</span></li>
+
+                    <li></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;pre&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This     paragraph has multiple</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lines. But     it is displayed</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as it is unlike    the paragraph</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    tag</li>
+                        
+                        
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/pre&gt;</span></li>
+
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>OUTPUT:</b>
+            <br>
+            <div class="imagediv">
+                <img src="paragraph3.jpg" alt="pre tag" class="image">
+            </div>
+        </dd>
+        <br>
+
+        <dt class="listterm">AVOIDING COMMON MISTAKES WITH PARAGRAPHS</dt>
+        <br>
+
+        <dd class="listdata">
+            <ol>
+                <li>
+                    <b>AVOID NESTED PARAGRAPHS: </b>
+                    You cannot nest paragraphs within one another. Each &lt;p&gt; tag should contain only the text for one block of content.
+                </li><br>
+                <li>
+                    <b>AVOID USING &lt;p&gt; FOR NON-TEXTUAL CONTENT: </b>
+                    The &lt;p&gt; tag is meant for text-based content. If you need to wrap images, tables, or other elements, use appropriate tags like &lt;img&gt;, &lt;table&gt;, or &lt;div&gt;.
+                </li>
+            </ol>
+        </dd>
+        <br>
+    </dl>
+    <br>
+</body>
+</html>

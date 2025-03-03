@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .body{
+            border: 5px solid yellow;
+            margin: 2%;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        .listterm{
+            margin-left: 2.5vw;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .listdata{
+            margin-left: 5vw;
+        }
+        .listdata2{
+            margin-left: 7.5vw;
+        }
+        .olist{
+            margin-left: 5%;
+        }
+        .ulist{
+            margin-left: 2.5%;
+        }
+        .code2{
+            border: 1px solid black;
+            margin-left: 7.5vw;
+            font-size: large;
+            background-color: lightgray;
+            margin-right: 1vw;
+            margin-bottom: 1vh;
+        }
+        .code1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: lightgray;
+            height: fit-content;
+            width: fit-content;
+            padding: 0px 10px;
+            font-size: larger;
+            margin-top: 1%;
+        }
+        .pink{
+            color:rgba(177,38,76,255) ;
+        }
+        .green{
+            color: rgba(122,197,43,255);
+        }
+        .yellow{
+            color: darkgoldenrod;
+        }
+        .gray{
+            color: gray;
+        }
+        .cyan{
+            color: darkcyan;
+        }
+        .white{
+            color: white;
+        }
+        .tableheader{
+            padding: 5%;
+            font-size: large;
+        }
+        .tabledata{
+            padding: 5%;
+            text-align: center;
+            vertical-align: center;
+        }
+        .table{
+            background-color: lightgray;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .image
+        {
+            border: 2.5px solid yellow;
+        }
+        .imagediv
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .listdata3{
+            font-weight: normal;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="heading">
+        <h1>HTML TABLES</h1>
+    </div>
+    <hr><br>
+    <dl class="list">
+        <dt class="listterm">HTML TABLES</dt>
+        <br>
+
+        <dd class="listdata">
+            <b>HTML Tables</b> allow you to arrange data into rows and columns on a web page, making it easy to display information like schedules, statistics, or other structured data in a clear format.
+        </dd>
+        <br>
+
+        <dt class="listterm">WHAT IS AN HTML TABLE ?</dt>
+        <br>
+
+        <dd class="listdata">
+            An HTML table is created using the &lt;table&gt; tag. Inside this tag, you use
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <ul>
+                <li><b>&lt;tr&gt;</b> to define table rows,</li>
+                <li><b>&lt;th&gt;</b> for table headers, and</li>
+                <li><b>&lt;td&gt;</b> for table data cells</li>
+            </ul>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            Each &lt;tr&gt; represents a row, and within each row, &lt;th&gt; or &lt;td&gt; tags represent the cells in that row, which can contain text, images, lists, or even another table.
+        </dd>
+        <br>
+
+        <dd class="listdata imagediv">
+            <img class="image" src="table1.webp" alt="tables">
+        </dd>
+        <br>
+
+        <dt class="listterm">HTML TABLE CODE EXAMPLE</dt>
+        <br>
+
+        <dd class="listdata code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Basic HTML Table<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;table&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Firstname<span class="pink">&lt;/th&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Lastname<span class="pink">&lt;/th&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Age<span class="pink">&lt;/th&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Priya<span class="pink">&lt;/th&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Sharma<span class="pink">&lt;/th&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>24<span class="pink">&lt;/th&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Arun<span class="pink">&lt;/th&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Singh<span class="pink">&lt;/th&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>32<span class="pink">&lt;/th&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Sam<span class="pink">&lt;/th&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Watson<span class="pink">&lt;/th&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>41<span class="pink">&lt;/th&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/table&gt;</span></li>
+
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>OUTPUT:</b>
+        </dd>
+        <br>
+
+        <dd class="listdata imagediv">
+            <img src="table2.png" alt="table2 image" class="image">
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>IN THIS EXAMPLE:</b>
+            <br>
+            <span class="listdata2">
+                <ul>
+                    <li>
+                        <b>&lt;table&gt;:</b>
+                        This tag starts the table. Everything between the opening &lt;table&gt; and closing &lt;/table&gt; tags makes up the table.
+                    </li>
+                    <li>
+                        <b>&lt;tr&gt;:</b>
+                        Stands for “table row”. Each &lt;tr&gt; tag defines a row in the table.
+                    </li>
+                    <li>
+                        <b>&lt;th&gt;:</b>
+                        Stands for “table header”. It&#39;s used for the headers of the columns. In this case, “<b>Firstname</b>“, “<b>Lastname</b>“, and “<b>Age</b>” are headers. Text in &lt;th&gt; tags is usually bold and centered by default.
+                    </li>
+                    <li>
+                        <b>&lt;td&gt;:</b>
+                        Stands for “table data”. This tag is used for actual data cells under each column. For instance, “<b>Priya</b>” is the data under the “<b>Firstname</b>” header, “<b>Sharma</b>” under the “<b>Lastname</b>“, and “<b>24</b>” under the “<b>Age</b>“.
+                    </li>
+                    <li>
+                        The first &lt;tr&gt; has three &lt;th&gt; elements, setting up the column titles.
+                    </li>
+                </ul>
+            </span>
+            <br>
+            When this HTML code is rendered in a web browser, it will display a table with four rows (one header row plus three data rows) and three columns (Firstname, Lastname, Age), showing the names and ages of Priya, Arun, and Sam.
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            TAGS USED IN HTML TABLES
+        </dt>
+        <br>
+
+        <dd class="listdata">
+            <table class="table" border="1">
+                <tr>
+                    <th class="tableheader">HTML TAGS</th>
+                    <th class="tableheader">DESCRIPTION</th>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;table&gt;</td>
+                    <td class="tabledata">Defines the structure for organizing data in rows and columns within a web page.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;tr&gt;</td>
+                    <td class="tabledata">Represents a row within an HTML table, containing individual cells.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;th&gt;</td>
+                    <td class="tabledata">Shows a table header cell that typically holds titles or headings.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;td&gt;</td>
+                    <td class="tabledata">Represents a standard data cell, holding content or data.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;caption&gt;</td>
+                    <td class="tabledata">Provides a title or description for the entire table.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;thead&gt;</td>
+                    <td class="tabledata">Defines the header section of a table, often containing column labels.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;tbody&gt;</td>
+                    <td class="tabledata">Represents the main content area of a table, separating it from the header or footer.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;tfoot&gt;</td>
+                    <td class="tabledata">Specifies the footer section of a table, typically holding summaries or totals.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;col&gt;</td>
+                    <td class="tabledata">Defines attributes for table columns that can be applied to multiple columns at once.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;colgroup&gt;</td>
+                    <td class="tabledata">Groups together a set of columns in a table to which you can apply formatting or properties collectively.
+                    </td>
+                </tr>
+            </table>
+        </dd>
+        <br>
+
+        <dt class="listterm">STYLING HTML TABLES</dt>
+        <br>
+
+        <dd class="listdata">
+            Styling an HTML table can significantly improve its appearance and readability. You can use CSS (Cascading Style Sheets) to add styles such as borders, background colors, text alignments, and much more. Here are some basic styles to make your table look neater and more professional:
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            <ol style="margin-left: 2%;">
+                <li>
+                    ADDING A BORDER TO AN HTML TABLE
+                    <br>
+                    <span class="listdata3">
+                        A border is set using the CSS border property. If you do not specify a border for the table, it will be displayed without borders.
+
+                        <br>
+                    <b>SYNTAX:</b>
+                    <span class="code1">
+                        <code>
+                            table, th, td &lbrace;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border: 1px solid black;<br>
+                            &rbrace;
+                        </code>
+                    </span>
+                    <br>
+                    <b>EXAMPLE: </b>
+                    Addition of the border to the HTML Table.
+                    <br><br>
+                    <div class="code2">
+                        <table class="table ">
+                            <code>
+                                <ol class="olist">
+                                    <br>
+    
+                                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;html&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;head&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Basic HTML Table<span class="pink">&lt;/title&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;style&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">table, th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border</span><span class="white">: </span><span class="pink">1px solid black </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/style&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/head&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;body&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;table </span><span class="green">style</span><span class="white">=</span><span class="yellow">"width:100%"</span><span class="pink">&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Firstname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Lastname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Age<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Priya<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sharma<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>24<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Arun<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Singh<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>32<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sam<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Watson<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>41<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/table&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/body&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;/html&gt;</span></li>
+    
+                                    <br>
+                                </ol>
+                            </code>
+                        </table>
+                    </div>
+                    <br>
+                    <b>OUTPUT:</b>
+                    <br>
+                    <div class="imagediv">
+                        <img src="table3.png" alt="table3" class="image">
+                    </div>
+                    </span>
+                </li>
+                <br>
+                <li>
+                    ADDING COLLAPSED BORDERS IN AN HTML TABLE
+                    <br>
+                    <span class="listdata3">
+                        For borders to collapse into one border, add the CSS border-collapse property.
+                        <br>
+                        <b>SYNTAX</b>
+                        <br>
+                        <span class="code1">
+                            <code>
+                                table, th, td &lbrace;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border: 1px solid black;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-collapse: collapse;<br> 
+                            &rbrace;
+                            </code>
+                        </span>
+                        <br>
+                        <b>EXAMPLE: </b>
+                        Addition of Collapsed Borders in HTML.
+                        <br><br>
+                        <div class="code2">
+                            <code>
+                                <ol class="olist">
+                                    <br>
+
+                                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;html&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;head&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Basic HTML Table<span class="pink">&lt;/title&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;style&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">table, th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border</span><span class="white">: </span><span class="pink">1px solid black </span><span class="white">;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border-collapse</span><span class="white">: </span><span class="pink">collapse </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/style&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/head&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;body&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;table </span><span class="green">style</span><span class="white">=</span><span class="yellow">"width:100%"</span><span class="pink">&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Firstname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Lastname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Age<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Priya<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sharma<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>24<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Arun<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Singh<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>32<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sam<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Watson<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>41<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/table&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/body&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                                    <br>
+                                </ol>
+                            </code>
+                        </div>
+                        <br>
+                        <b>OUTPUT: </b>
+                        <br>
+                        <div class="imagediv">
+                            <img src="table4.png" alt="table4" class="image">
+                        </div>
+                    </span>
+                </li>
+                <br>
+                <li>
+                    ADDING CELL PADDING IN AN HTML TABLE
+                    <br>
+                    <span class="listdata3">
+                        Cell padding specifies the space between the cell content and its borders. If we do not specify a padding, the table cells will be displayed without padding.
+                        <br>
+                        <b>SYNTAX</b>
+                        <br>
+                        <span class="code1">
+                            <code>
+                                th, td &lbrace;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 20px solid black;<br>
+                            &rbrace;
+                            </code>
+                        </span>
+                        <br>
+                        <b>EXAMPLE: </b>
+                        Addition of Table cell padding in HTML.
+                        <br><br>
+                        <div class="code2">
+                            <code>
+                                <ol class="olist">
+                                    <br>
+
+                                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;html&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;head&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Basic HTML Table<span class="pink">&lt;/title&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;style&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">table, th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border</span><span class="white">: </span><span class="pink">1px solid black </span><span class="white">;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border-collapse</span><span class="white">: </span><span class="pink">collapse </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+
+                                    <li></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">padding</span><span class="white">: </span><span class="pink">20px</span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/style&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/head&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;body&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;table </span><span class="green">style</span><span class="white">=</span><span class="yellow">"width:100%"</span><span class="pink">&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Firstname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Lastname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Age<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Priya<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sharma<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>24<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Arun<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Singh<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>32<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sam<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Watson<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>41<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/table&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/body&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                                    <br>
+                                </ol>
+                            </code>
+                        </div>
+                        <br>
+                        <b>OUTPUT: </b>
+                        <br>
+                        <div class="imagediv">
+                            <img src="table5.png" alt="table5" class="image">
+                        </div>
+                    </span>
+                </li>
+                <br>
+                <li>
+                    ADDING LEFT ALIGN HEADINGS IN AN HTML TABLE
+                    <br>
+                    <span class="listdata3">
+                        By default, the table headings are bold and centered. To left-align the table headings, we must use the CSS text-align property.
+                        <br>
+                        <b>SYNTAX</b>
+                        <br>
+                        <span class="code1">
+                            <code>
+                                th &lbrace;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: left;<br>
+                            &rbrace;
+                            </code>
+                        </span>
+                        <br>
+                        <b>EXAMPLE: </b>
+                        Explains the text-align property where the text is aligned to the left.
+                        <br><br>
+                        <div class="code2">
+                            <code>
+                                <ol class="olist">
+                                    <br>
+
+                                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;html&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;head&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Basic HTML Table<span class="pink">&lt;/title&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;style&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">table, th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border</span><span class="white">: </span><span class="pink">1px solid black </span><span class="white">;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border-collapse</span><span class="white">: </span><span class="pink">collapse </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+
+                                    <li></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">padding</span><span class="white">: </span><span class="pink">20px </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+
+                                    <li></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">th </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">text-align</span><span class="white">: </span><span class="pink">left </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/style&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/head&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;body&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;table </span><span class="green">style</span><span class="white">=</span><span class="yellow">"width:100%"</span><span class="pink">&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Firstname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Lastname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Age<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Priya<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sharma<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>24<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Arun<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Singh<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>32<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sam<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Watson<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>41<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/table&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/body&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                                    <br>
+                                </ol>
+                            </code>
+                        </div>
+                    </span>
+                </li>
+                <br>
+                <li>
+                    ADDING BORDER SPACING IN AN HTML TABLE
+                    <br>
+                    <span class="listdata3">
+                        Border spacing specifies the space between the cells. To set the border-spacing for a table, we must use the CSS border-spacing property.
+                        <br>
+                        <b>SYNTAX:</b>
+                        <br>
+                        <span class="code1">
+                            <code>
+                                table &lbrace;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-spacing: 5px;<br>
+                            &rbrace;
+                            </code>
+                        </span>
+                        <br>
+                        <b>EXAMPLE: </b>
+                        Explains the border space property to make the space between the Table cells.
+                        <br><br>
+                        <div class="code2">
+                            <code>
+                                <ol class="olist">
+                                    <br>
+
+                                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;html&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;head&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Basic HTML Table<span class="pink">&lt;/title&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;style&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">table, th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border</span><span class="white">: </span><span class="pink">1px solid black </span><span class="white">;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border-collapse</span><span class="white">: </span><span class="pink">collapse </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+
+                                    <li></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">table </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border-spacing</span><span class="white">: </span><span class="pink">5px </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/style&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/head&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;body&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;table </span><span class="green">style</span><span class="white">=</span><span class="yellow">"width:100%"</span><span class="pink">&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Firstname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Lastname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Age<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Priya<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sharma<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>24<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Arun<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Singh<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>32<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sam<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Watson<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>41<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/table&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/body&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                                    <br>
+                                </ol>
+                            </code>
+                        </div>
+                        <br>
+                        <b>OUTPUT:</b>
+                        <br>
+                        <div class="imagediv">
+                            <img src="table6.png" alt="table6" class="image">
+                        </div>
+                    </span>
+                </li>
+                <br>
+                <li>
+                    ADDING CELLS THAT SPAN MANY COLUMNS IN HTML TABLES
+                    <br>
+                    <span class="listdata3">
+                        To make a cell span more than one column, we must use the colspan attribute.
+                        <br>
+                        <b>EXAMPLE: </b>
+                        Use of colspan attribute in HTML.
+                        <br><br>
+                        <div class="code2">
+                            <code>
+                                <ol class="olist">
+                                    <br>
+
+                                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;html&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;head&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Basic HTML Table<span class="pink">&lt;/title&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;style&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">table, th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border</span><span class="white">: </span><span class="pink">1px solid black </span><span class="white">;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border-collapse</span><span class="white">: </span><span class="pink">collapse </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+
+                                    <li></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">padding</span><span class="white">: </span><span class="pink">5px </span><span class="white">;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">text-align</span><span class="white">: </span><span class="pink">left </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/style&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/head&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="pink">&lt;h2&gt;</span>Cell that spans two columns: <span class="pink">&lt;/h2&gt;</span>
+                                    </li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;table </span><span class="green">style</span><span class="white">=</span><span class="yellow">"width:100%"</span><span class="pink">&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Name<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th </span><span class="green">colspan</span><span class="white">=</span><span class="yellow">"2"</span><span class="pink">&gt;</span>Telephone<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Vikas Rawat<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>9125577854<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>8565557785<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/table&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/body&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                                    <br>
+                                </ol>
+                            </code>
+                        </div>
+                        <br>
+                        <b>OUTPUT:</b>
+                        <br>
+                        <div class="imagediv">
+                            <img src="table7.png" alt="table7" class="image">
+                        </div>
+                    </span>
+                </li>
+                <br>
+                <li>
+                    ADDING CELLS THAT SPAN MANY ROWS IN HTML TABLES
+                    <br>
+                    <span class="listdata3">
+                        To make a cell span more than one row, we must use the rowspan attribute.
+                        <br>
+                        <b>EXAMPLE: </b>
+                        Use of the rowspan attribute in HTML.
+                        <br><br>
+                        <div class="code2">
+                            <code>
+                                <ol class="olist">
+                                    <br>
+
+                                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;html&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;head&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Basic HTML Table<span class="pink">&lt;/title&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;style&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">table, th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border</span><span class="white">: </span><span class="pink">1px solid black </span><span class="white">;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border-collapse</span><span class="white">: </span><span class="pink">collapse </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+
+                                    <li></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">padding</span><span class="white">: </span><span class="pink">5px </span><span class="white">;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">text-align</span><span class="white">: </span><span class="pink">left </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/style&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/head&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="pink">&lt;h2&gt;</span>Cell that spans two rows: <span class="pink">&lt;/h2&gt;</span>
+                                    </li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;table </span><span class="green">style</span><span class="white">=</span><span class="yellow">"width:100%"</span><span class="pink">&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Name<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Telephone<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th </span><span class="green">colspan</span><span class="white">=</span><span class="yellow">"2"</span><span class="pink">&gt;</span>Vikas Rawat<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>9125577854<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>8565557785<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/table&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/body&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                                    <br>
+                                </ol>
+                            </code>
+                        </div>
+                        <br>
+                        <b>OUTPUT:</b>
+                        <br>
+                        <div class="imagediv">
+                            <img src="table8.png" alt="table8" class="image">
+                        </div>
+                    </span>
+                </li>
+                <br>
+                <li>
+                    ADDING A CAPTION IN AN HTML TABLE
+                    <br>
+                    <span class="listdata3">
+                        To add a caption to a table, we must use the “caption” tag.
+                        <br>
+                        <b>SYNTAX</b>
+                        <br>
+                        <span class="code1">
+                            <code>
+                                &lt;table style="width:100&"&gt;<br>
+                                &ltcaption&gt;DETAILS&lt;/caption&gt;
+                            </code>
+                        </span>
+                        <br>
+                        <b>EXAMPLE: </b>
+                        HTML Table caption by specifying the CSS properties for setting its width.
+                        <br><br>
+                        <div class="code2">
+                            <code>
+                                <ol class="olist">
+                                    <br>
+
+                                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;html&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;head&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Basic HTML Table<span class="pink">&lt;/title&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;style&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">table, th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border</span><span class="white">: </span><span class="pink">1px solid black </span><span class="white">;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border-collapse</span><span class="white">: </span><span class="pink">collapse </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+
+                                    <li></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">padding</span><span class="white">: </span><span class="pink">20px </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+
+                                    <li></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">th </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">text-align</span><span class="white">: </span><span class="pink">left </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/style&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/head&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;body&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;table </span><span class="green">style</span><span class="white">=</span><span class="yellow">"width:100%"</span><span class="pink">&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;caption&gt;</span>DETAILS<span class="pink">&lt;/caption&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Firstname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Lastname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Age<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Priya<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sharma<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>24<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Arun<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Singh<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>32<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sam<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Watson<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>41<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/table&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/body&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                                    <br>
+                                </ol>
+                            </code>
+                        </div>
+                        <br>
+                        <b>OUTPUT: </b>
+                        <br>
+                        <div class="imagediv">
+                            <img src="table9.png" alt="table9" class="image">
+                        </div>
+                    </span>
+                </li>
+                <br>
+                <li>
+                    ADDING A BACKGROUND COLOR TO THE TABLE
+                    <br>
+                    <span class="listdata3">
+                        A color can be added as a background in an HTML table using the “background-color” option.
+                    <br>
+                    <b>SYNTAX</b>
+                    <br>
+                    <span class="code1">
+                        <code>
+                            table#01 &lbrace;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 100%;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #f2f2d1;<br>
+                            &rbrace;
+                        </code>
+                    </span>
+                    <br>
+                    <b>EXAMPLE: </b>
+                    Addition of the Table background color in HTML.
+                    <br><br>
+                    <div class=" listdata code2">
+                        <code>
+                            <ol class="olist1">
+                                <br>
+
+                                <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;html&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;head&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Basic HTML Table<span class="pink">&lt;/title&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;style&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">table, th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border</span><span class="white">: </span><span class="pink">1px solid black </span><span class="white">;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">border-collapse</span><span class="white">: </span><span class="pink">collapse </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+
+                                    <li></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">th, td </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">padding</span><span class="white">: </span><span class="pink">5px </span><span class="white">;</span></li>
+
+                                    <li>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">text-align</span><span class="white">:</span><span class="pink"> left</span><span class="white"> ;</span>
+                                    </li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+
+                                    <li></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">table<span class="white">#t01</span> </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">width</span><span class="white">: </span><span class="pink">100% </span><span class="white">;</span></li>
+
+                                    <li>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">background-color</span><span class="white">:</span><span class="pink"> #f2f2d1</span><span class="white"> ;</span>
+                                    </li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">th </span><span class="white">&lbrace;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">text-align</span><span class="white">: </span><span class="pink">left </span><span class="white">;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rbrace;</li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/style&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/head&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;body&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;table </span><span class="green">style</span><span class="white">=</span><span class="yellow">"width:100%"</span><span class="pink">&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Firstname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Lastname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Age<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Priya<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sharma<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>24<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Arun<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Singh<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>32<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sam<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Watson<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>41<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/table&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;table </span><span class="green">id</span><span class="white">=</span><span class="yellow">"t01"</span><span class="pink">&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Firstname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Lastname<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;th&gt;</span>Age<span class="pink">&lt;/th&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Priya<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sharma<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>24<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Arun<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Singh<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>32<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Sam<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>Watson<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>41<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/table&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/body&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                                <br>
+                            </ol>
+                        </code>
+                    </div>
+                    <br>
+                    <b>OUTPUT: </b>
+                    <br>
+                    <div class="imagediv">
+                        <img src="table10.png" alt="table10" class="image">
+                    </div>
+                    </span>
+                </li>
+                <br>
+                <li>
+                    CREATING NESTED TABLES
+                    <br>
+                    <span class="listdata3">
+                        Nesting tables simply means making a Table inside another Table. Nesting tables can lead to complex tables layouts, which are visually interesting and have the potential of introducing errors. 
+                        <br>
+                        <b>EXAMPLE: </b>
+                        Nesting of HTML Table.
+                        <br><br>
+                        <div class="code2">
+                            <code>
+                                <ol class="olist">
+                                    <br>
+
+                                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;html&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;head&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Nested HTML Tables<span class="pink">&lt;/title&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/head&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;body&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;table </span><span class="green">style</span><span class="white">=</span><span class="yellow">"width:100%"</span><span class="green"> bordercolor</span><span class="white">=</span><span class="yellow">"grey"</span><span class="pink">&gt;</span></li>
+
+                                    
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span> First row of Inner Table <span class="pink">&lt;/td&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;table </span><span class="green">border</span><span class="white">=</span><span class="yellow">"5"</span>
+                                        <span class="green"> bordercolor</span><span class="white">=</span><span class="yellow">"grey"</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+
+                                    <li>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>first row of inner table
+                                        <span class="pink">&lt/td&gt;</span>
+                                    </li>
+
+                                    <li>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span>
+                                    </li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;tr&gt;</span></li>
+
+                                    <li>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;td&gt;</span>second row of inner table
+                                        <span class="pink">&lt/td&gt;</span>
+                                    </li>
+
+                                    <li>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span>
+                                    </li>
+
+
+                                    <li>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/table&gt;</span>
+                                    </li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/td&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/tr&gt;</span></li>
+    
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/table&gt;</span></li>
+    
+                                    <li><span class="pink">&lt;/body&gt;</span></li>
+    
+                                    <li></li>
+    
+                                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                                    <br>
+                                </ol>
+                            </code>
+                        </div>
+                        <br>
+                        <b>OUTPUT:</b>
+                        <br>
+                        <div class="imagediv">
+                            <img src="table11.png" alt="table11" class="image">
+                        </div>
+                    </span>
+                </li>
+            </ol>
+        </dt>
+        <br>
+    </dl>
+    <br>
+</body>
+</html>

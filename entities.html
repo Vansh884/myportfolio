@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .body{
+            border: 5px solid yellow;
+            margin: 2%;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        .listterm{
+            margin-left: 2.5vw;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .listdata{
+            margin-left: 5vw;
+        }
+        .listdata2{
+            margin-left: 7.5vw;
+        }
+        .olist{
+            margin-left: 5%;
+        }
+        .code2{
+            border: 1px solid black;
+            margin-left: 7.5vw;
+            font-size: large;
+            background-color: lightgray;
+            margin-right: 1vw;
+            margin-bottom: 1vh;
+        }
+        .code1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: lightgray;
+            height: 5vh;
+            width: fit-content;
+            padding: 0px 10px;
+            font-size: larger;
+            margin-top: 1%;
+        }
+        .pink{
+            color:rgba(177,38,76,255) ;
+        }
+        .green{
+            color: rgba(122,197,43,255);
+        }
+        .yellow{
+            color: darkgoldenrod;
+        }
+        .gray{
+            color: gray;
+        }
+        .cyan{
+            color: darkcyan;
+        }
+        .white{
+            color: white;
+        }
+        .tableheader{
+            padding: 5%;
+            font-size: large;
+        }
+        .tabledata{
+            padding: 5%;
+            text-align: center;
+            vertical-align: center;
+        }
+        .table{
+            background-color: lightgray;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .image
+        {
+            border: 2.5px solid yellow;
+        }
+        .imagediv
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="heading">
+        <h1>HTML ENTITIES</h1>
+    </div>
+    <hr><br>
+
+    <dl class="list">
+
+        <dt class="listterm">HTML ENTITIES</dt>
+        <br>
+
+        <dd class="listdata">
+            In HTML, there are reserved characters, such as &lt; (less than) and &gt; (greater than), which are used to define tags like &lt;p&gt;. However, if you use these reserved characters within the content, browsers may misinterpret them as part of the tags.
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>HTML Entities</b> were introduced to avoid this. Reserved characters should be replaced with their corresponding entities. For example:
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <ul>
+                <li>&lt; <b>&lpar;LESS THAN&rpar; =</b> &amp;lt;</li>
+                <li>&gt; <b>&lpar;GREATER THAN&rpar; =</b> &amp;gt;</li>
+            </ul>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>SYNTAX:</b>
+            <span class="code1">
+                <code>
+                    &entity_name; or & #entity_number;
+                </code>
+            </span>
+            <br>
+            <b>NOTE: </b><i>Entity names are case-sensitive.</i>
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            COMMONLY USED HTML ENTITIES
+        </dt>
+        <br>
+
+        <dd class="listdata">
+            Some commonly used symbols with their Entity name and Entity numbers are listed below:
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <table class="table" border=1>
+
+                <tr>
+                    <th class="tableheader" width="30%">SYMBOLS</th>
+                    <th class="tableheader" >DESCRIPTION</th>
+                    <th class="tableheader" >ENTITY NAME</th>
+                    <th class="tableheader" >ENTITY NUMBER</th>
+                </tr>
+
+                <tr>
+                    <td class="tabledata"> </td>
+                    <td class="tabledata">non-breaking space</td>
+                    <td class="tabledata">&amp;nbsp;</td>
+                    <td class="tabledata">&amp;#160;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;</td>
+                    <td class="tabledata">less than</td>
+                    <td class="tabledata">&amp;lt;</td>
+                    <td class="tabledata">&amp;#60;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&reg;</td>
+                    <td class="tabledata">registered trademark</td>
+                    <td class="tabledata">&amp;reg;</td>
+                    <td class="tabledata">&amp;#174;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&copy;</td>
+                    <td class="tabledata">copyright</td>
+                    <td class="tabledata">&amp;copy;</td>
+                    <td class="tabledata">&amp;#169;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&euro;</td>
+                    <td class="tabledata">euro</td>
+                    <td class="tabledata">&amp;euro;</td>
+                    <td class="tabledata">&amp;#8364;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&yen;</td>
+                    <td class="tabledata">yen</td>
+                    <td class="tabledata">&amp;yen;</td>
+                    <td class="tabledata">&amp;#165;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&pound;</td>
+                    <td class="tabledata">pound</td>
+                    <td class="tabledata">&amp;pound;</td>
+                    <td class="tabledata">&amp;#163;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&cent;</td>
+                    <td class="tabledata">cent</td>
+                    <td class="tabledata">&amp;cent;</td>
+                    <td class="tabledata">&amp;#162;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&quot;</td>
+                    <td class="tabledata">double quotation mark</td>
+                    <td class="tabledata">&amp;quot;</td>
+                    <td class="tabledata">&amp;#34;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&amp;</td>
+                    <td class="tabledata">ampersand</td>
+                    <td class="tabledata">&amp;amp;</td>
+                    <td class="tabledata">&amp;#38;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&gt;</td>
+                    <td class="tabledata">greater than</td>
+                    <td class="tabledata">&amp;gt;</td>
+                    <td class="tabledata">&amp;#62;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&part;</td>
+                    <td class="tabledata">PARTIAL DIFFERENTIAL</td>
+                    <td class="tabledata">&amp;part;</td>
+                    <td class="tabledata">&amp;#8707;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&exist;</td>
+                    <td class="tabledata">THERE EXISTS</td>
+                    <td class="tabledata">&amp;exist;</td>
+                    <td class="tabledata">&amp;#8707;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&empty;</td>
+                    <td class="tabledata">EMPTY SETS</td>
+                    <td class="tabledata">&amp;empty;</td>
+                    <td class="tabledata">&amp;#8709;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&nabla;</td>
+                    <td class="tabledata">NABLA</td>
+                    <td class="tabledata">&amp;nabla;</td>
+                    <td class="tabledata">&amp;#8711;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&isin;</td>
+                    <td class="tabledata">ELEMENT OF</td>
+                    <td class="tabledata">&amp;isin;</td>
+                    <td class="tabledata">&amp;#8712;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&notin;</td>
+                    <td class="tabledata">NOT AN ELEMENT OF</td>
+                    <td class="tabledata">&amp;notin;</td>
+                    <td class="tabledata">&amp;#8713;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&plus;</td>
+                    <td class="tabledata">PLUS SIGN</td>
+                    <td class="tabledata">&amp;plus;</td>
+                    <td class="tabledata">&amp;#43;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&prod;</td>
+                    <td class="tabledata">N-ARY PRODUCT</td>
+                    <td class="tabledata">&amp;prod;</td>
+                    <td class="tabledata">&amp;#8719;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&sum;</td>
+                    <td class="tabledata">N-ARY SUMMATION</td>
+                    <td class="tabledata">&amp;sum;</td>
+                    <td class="tabledata">&amp;#8721;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&Alpha;</td>
+                    <td class="tabledata">Alpha</td>
+                    <td class="tabledata">&amp;Alpha;</td>
+                    <td class="tabledata">&amp;#913;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&Beta;</td>
+                    <td class="tabledata">Beta</td>
+                    <td class="tabledata">&amp;Beta;</td>
+                    <td class="tabledata">&amp;#914;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&Gamma;</td>
+                    <td class="tabledata">Gamma</td>
+                    <td class="tabledata">&amp;Gamma;</td>
+                    <td class="tabledata">&amp;#915;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&Delta;</td>
+                    <td class="tabledata">Delta</td>
+                    <td class="tabledata">&amp;Delta;</td>
+                    <td class="tabledata">&amp;#916;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&Epsilon;</td>
+                    <td class="tabledata">Epsilon</td>
+                    <td class="tabledata">&amp;Epsilon;</td>
+                    <td class="tabledata">&amp;#917;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&Zeta;</td>
+                    <td class="tabledata">Zeta</td>
+                    <td class="tabledata">&amp;Zeta;</td>
+                    <td class="tabledata">&amp;#918;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&hearts;</td>
+                    <td class="tabledata">BLACK HEART SUIT = valentine</td>
+                    <td class="tabledata">&amp;hearts;</td>
+                    <td class="tabledata">&amp;#9829;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&clubs;</td>
+                    <td class="tabledata">BLACK CLUB SUIT = shamrock</td>
+                    <td class="tabledata">&amp;clubs;</td>
+                    <td class="tabledata">&amp;#9827;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&spades;</td>
+                    <td class="tabledata">BLACK SPADE SUIT</td>
+                    <td class="tabledata">&amp;spades;</td>
+                    <td class="tabledata">&amp;#9824;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&trade;</td>
+                    <td class="tabledata">TRADEMARK</td>
+                    <td class="tabledata">&amp;trade;</td>
+                    <td class="tabledata">&amp;#8482;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&darr;</td>
+                    <td class="tabledata">DOWNWARDS ARROW</td>
+                    <td class="tabledata">&amp;darr;</td>
+                    <td class="tabledata">&amp;#8595;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&rarr;</td>
+                    <td class="tabledata">RIGHTWARDS ARROW</td>
+                    <td class="tabledata">&amp;rarr;</td>
+                    <td class="tabledata">&amp;#8594;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&uarr;</td>
+                    <td class="tabledata">UPWARDS ARROW</td>
+                    <td class="tabledata">&amp;uarr;</td>
+                    <td class="tabledata">&amp;#8593;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&larr;</td>
+                    <td class="tabledata">LEFTWARDS ARROW</td>
+                    <td class="tabledata">&amp;larr;</td>
+                    <td class="tabledata">&amp;#8592;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&deg;</td>
+                    <td class="tabledata">degree</td>
+                    <td class="tabledata">&amp;deg;</td>
+                    <td class="tabledata">&amp;#176;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&infin;</td>
+                    <td class="tabledata">infinity</td>
+                    <td class="tabledata">&amp;infin;</td>
+                    <td class="tabledata">&amp;#8734;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&permil;</td>
+                    <td class="tabledata">per-mile</td>
+                    <td class="tabledata">&amp;permil;</td>
+                    <td class="tabledata">&amp;#8901;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&sdot;</td>
+                    <td class="tabledata">dop operator</td>
+                    <td class="tabledata">&amp;sdot;</td>
+                    <td class="tabledata">&amp;#8901;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&plusmn;</td>
+                    <td class="tabledata">plus-minus</td>
+                    <td class="tabledata">&amp;plusmn;</td>
+                    <td class="tabledata">&amp;#177;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&hercon;</td>
+                    <td class="tabledata">hermitian</td>
+                    <td class="tabledata">&amp;hercon;</td>
+                    <td class="tabledata">&amp;#8889;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&minus;</td>
+                    <td class="tabledata">minus sign</td>
+                    <td class="tabledata">&amp;minus;</td>
+                    <td class="tabledata">&amp;#8722;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&not;</td>
+                    <td class="tabledata">-</td>
+                    <td class="tabledata">&amp;not;</td>
+                    <td class="tabledata">&amp;#172;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&percnt;</td>
+                    <td class="tabledata">percent</td>
+                    <td class="tabledata">&amp;percnt;</td>
+                    <td class="tabledata">&amp;#37;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&fnof;</td>
+                    <td class="tabledata">function</td>
+                    <td class="tabledata">&amp;fnof;</td>
+                    <td class="tabledata">&amp;#402;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&parallel;</td>
+                    <td class="tabledata">parallel;</td>
+                    <td class="tabledata">&amp;parallel;</td>
+                    <td class="tabledata">&amp;#8741;</td>
+                </tr>
+            </table>
+        </dd>
+        <br>
+
+        <dt class="listterm">EXAMPLES OF HTML ENTITIES</dt>
+        <br>
+
+        <dd class="listdata">
+            <b>EXAMPLE:</b>
+            In this example we displays various currency symbols using entity representations
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Currency Symbols<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2&gt;</span>Currency Symbols Using HTML Entities<span class="pink">&lt;/h2&gt;</Headingspan></li>
+                    
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;ul&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Dollar: &amp;#36;<span class="pink">&lt;/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Euro: &amp;#8364;<span class="pink">&lt;/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Pound: &amp;#163;<span class="pink">&lt;/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Yen: &amp;#165;<span class="pink">&lt;/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Ruppee: &amp;#8377;<span class="pink">&lt;/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Won: &amp;#8361;<span class="pink">&lt;/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Franco: &amp;#8355;<span class="pink">&lt;/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Bitcoin: &amp;#8383;<span class="pink">&lt;/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/ul&gt;</span></li>
+                    
+                    <li><span class="pink">&lt;/body&gt;</span></li>    
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dt class="listterm">RESERVED CHARACTERS</dt>
+        <br>
+
+        <dd class="listdata">
+            These characters are either reserved for HTML or those which are not present in the basic keyboard & can&#39;t use them directly. Some of the reserved characters representations are given below:
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <table class="table" border="1">
+                <tr>
+                    <th class="tableheader" width="50%">RESERVED CHARACTER</th>
+                    <th class="tableheader">ENTITY NAME</th>
+                </tr>
+                <tr>
+                    <td class="tabledata">&amp;</td>
+                    <td class="tabledata">&amp;amp;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;</td>
+                    <td class="tabledata">&amp;li;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&gt;</td>
+                    <td class="tabledata">&amp;gt;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&quot;</td>
+                    <td class="tabledata">&amp;quot;</td>
+                </tr>
+            </table>
+        </dd>
+        <br>
+
+        <dt class="listterm">OTHER CHARACTERS</dt>
+        <br>
+
+        <dd class="listdata">
+            Some characters that aren&#39;t available directly on our keyboard, therefore such an entity can be used to represent it by using their entity number. These keywords are directly not available to type, we need to specify their entity number. Here #x before the numbers represents the hexadecimal representation.
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <table class="table" border="1">
+                <tr>
+                    <th class="tableheader" width="55%">CHARACTER</th>
+                    <th class="tableheader">ENTITY NAME</th>
+                </tr>
+                <tr>
+                    <td class="tabledata">&GreaterEqual;;</td>
+                    <td class="tabledata">&amp;GreaterEqual;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&copy;</td>
+                    <td class="tabledata">&amp;copy;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&euro;</td>
+                    <td class="tabledata">&amp;euro;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&exist;</td>
+                    <td class="tabledata">&amp;exist;</td>
+                </tr>
+            </table>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>EXAMPLE:</b>
+            Illustration of the use of special characters that are directly not available to type from the keyboard.
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML ENTITIES<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2&gt;</span>Currency Symbols Using HTML Entities<span class="pink">&lt;/h2&gt;</Headingspan></li>
+                    
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;ul&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Showing euro &amp;euro;<span class="pink">&lt;/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Showing cent &amp;cent;<span class="pink">&lt;/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Showing copyright &amp;copy;<span class="pink">&lt;/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Showing BLACK DIAMOND SUIT &amp;diams;<span class="pink">&lt;/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Showing trademark &amp;trade;<span class="pink">&lt;/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/ul&gt;</span></li>
+                    
+                    <li><span class="pink">&lt;/body&gt;</span></li>    
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dt class="listterm">NON-BREAKING SPACE</dt>
+        <br>
+
+        <dd class="listdata">
+            It is used to provide space that will not break into a new line. This HTML entity is represented by &amp;nbsp; that will separate the 2 words & will stick together without breaking it into a new line. We can also use the non-breaking space for preventing the browsers from truncating spaces in HTML pages. The non-breaking hyphen (&minus;) is used to define a hyphen character (&minus;) that does not break into a new line.
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>EXAMPLE:</b>
+            <ul class="listdata2">
+                <li>12:00 PM</li>
+                <li>256 km/h</li>
+            </ul>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            If we use to write 10 spaces in our text, then the browser will remove 9 of them. In order to add real spaces in our text, we can use the character entity.
+        </dd>
+        <br>
+
+        <dt class="listterm">COMBINING DIACRITICAL MARKS</dt>
+        <br>
+
+        <dd class="listdata">
+            A diacritical mark is a symbol added to a letter. Marks like the grave accent ( ̀) and acute accent ( ́) are examples of diacritical marks. They can be placed above, below, or inside a letter, or even between two letters. These marks are combined with letters to create new characters not found in the basic character set. Here are some common diacritical marks:
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <table class="table" border=1>
+                <tr>
+                    <th class="tableheader" width="20%">MARK</th>
+                    <th class="tableheader" width="30%">CHARACTER</th>
+                    <th class="tableheader">CONSTRUCT (HTML CODE)</th>
+                    <th class="tableheader">FINAL RESULT</th>
+                </tr>
+                <tr>
+                    <td class="tabledata">&#768;</td>
+                    <td class="tabledata">a</td>
+                    <td class="tabledata">a&amp;#769;</td>
+                    <td class="tabledata">a&#769;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&#769;</td>
+                    <td class="tabledata">a</td>
+                    <td class="tabledata">a&amp;#768;</td>
+                    <td class="tabledata">a&#768;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&#770;</td>
+                    <td class="tabledata">a</td>
+                    <td class="tabledata">a&amp;#770;</td>
+                    <td class="tabledata">a&#770;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&#771;</td>
+                    <td class="tabledata">a</td>
+                    <td class="tabledata">a&amp;#771;</td>
+                    <td class="tabledata">a&#771;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&#768;</td>
+                    <td class="tabledata">O</td>
+                    <td class="tabledata">O&amp;#769;</td>
+                    <td class="tabledata">O&#769;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&#769;</td>
+                    <td class="tabledata">O</td>
+                    <td class="tabledata">O&amp;#768;</td>
+                    <td class="tabledata">O&#768;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&#770;</td>
+                    <td class="tabledata">O</td>
+                    <td class="tabledata">O&amp;#770;</td>
+                    <td class="tabledata">O&#770;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&#771;</td>
+                    <td class="tabledata">O</td>
+                    <td class="tabledata">O&amp;#771;</td>
+                    <td class="tabledata">O&#771;</td>
+                </tr>
+            </table>
+        </dd>
+        <br>
+
+        <dt class="listterm">BEST PRACTICES FOR USING HTML ENTITIES</dt>
+        <br>
+
+        <dd class="listdata">
+            <ul>
+                <li><b>USE NAMED ENTITIES WHEN POSSIBLE: </b>
+                    Named entities (&amp;lt; instead of &amp;#60;) are easier to remember and make your code more readable.
+                </li>
+                <br>
+                <li>
+                    <b>VERIFY ENTITY CODES:</b>
+                    Always check your entity codes to ensure they display correctly across all browsers and platforms.
+                </li>
+                <br>
+                <li>
+                    <b>USE ENTITIES FOR READABILITY AND COMPLIANCE:</b>
+                    Besides reserved characters, use entities to improve the readability of your code and to comply with HTML standards, especially when dealing with characters that may not be directly supported by your page&#39;s charset.
+                </li>
+                <br>
+            </ul>
+        </dd>
+    </dl>
+
+    <br>
+</body>
+</html>

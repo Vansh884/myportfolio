@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .body{
+            border: 5px solid yellow;
+            margin: 2%;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        .listterm{
+            margin-left: 2.5vw;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .listdata{
+            margin-left: 5vw;
+        }
+        .listdata2{
+            margin-left: 7.5vw;
+        }
+        .olist{
+            margin-left: 5%;
+        }
+        .ulist{
+            margin-left: 2.5%;
+        }
+        .code2{
+            border: 1px solid black;
+            margin-left: 7.5vw;
+            font-size: large;
+            background-color: lightgray;
+            margin-right: 1vw;
+            margin-bottom: 1vh;
+        }
+        .code1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: lightgray;
+            height: fit-content;
+            width: fit-content;
+            padding: 0px 10px;
+            font-size: larger;
+            margin-top: 1%;
+        }
+        .pink{
+            color:rgba(177,38,76,255) ;
+        }
+        .green{
+            color: rgba(122,197,43,255);
+        }
+        .yellow{
+            color: darkgoldenrod;
+        }
+        .gray{
+            color: gray;
+        }
+        .cyan{
+            color: darkcyan;
+        }
+        .white{
+            color: white;
+        }
+        .tableheader{
+            padding: 5%;
+            font-size: large;
+        }
+        .tabledata{
+            padding: 5%;
+            text-align: center;
+            vertical-align: center;
+        }
+        .table{
+            background-color: lightgray;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .image
+        {
+            border: 2.5px solid yellow;
+        }
+        .imagediv
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .listdata3{
+            font-weight: normal;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="heading">
+        <h1>HTML LISTS</h1>
+    </div>
+    <hr><br>
+    <dl class="list">
+        <dt class="listterm">HTML LISTS</dt>
+        <br>
+
+        <dd class="listdata">
+            An HTML List allows you to organize data on web pages into an ordered or unordered format to make the information easier to read and visually appealing. HTML Lists are very helpful for creating structured, accessible content in web development.
+        </dd>
+        <br>
+
+        <dt class="listterm">TYPES OF HTML LISTS</dt>
+        <br>
+
+        <dd class="listdata">
+            There are three main types of lists in HTML:
+            <br>
+            <ol class="listdata2">
+                <li><b>UNORDERED LISTS (&lt;ul&gt;): </b>
+                    These lists are used for items that do not need to be in any specific order. The list items are typically marked with bullets.
+                </li>
+                <br>
+                <li><b>ORDERED LISTS (&lt;ol&gt;): </b>
+                    These lists are used when the order of the items is important. Each item in an ordered list is typically marked with numbers or letters.
+                </li>
+                <br>
+                <li>
+                    <b>DESCRIPTION LISTS (&lt;dl&gt;): </b>
+                    These lists are used to contain terms and their corresponding descriptions.
+                </li>
+            </ol>
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            BASIC EXAMPLE OF HTML LISTS
+        </dt>
+        <br>
+
+        <dd class="listdata code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Basic HTML Lists<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2&gt;</span>Lists HTML Page <span class="pink">&lt;/h2&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h5&gt;</span>Unordered list<span class="pink">&lt;/h5&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;ul&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Data structures and algorithm. <span class="pink">&lt/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Web technology<span class="pink">&lt/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Aptitude and logical reasoning<span class="pink">&lt/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Programming languagaes<span class="pink">&lt/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt/ul&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h5&gt;</span>Ordered List<span class="pink">&lt;/h5&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;ol&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Array<span class="pink">&lt/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Linked list<span class="pink">&lt/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Stacks<span class="pink">&lt/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Queues<span class="pink">&lt/li&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt/ol&gt;</span></li>
+
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dt class="listterm">HTML LIST TAGS</dt>
+        <br>
+
+        <dd class="listdata">
+            <table class="table" border="1">
+                <tr>
+                    <th class="tableheader" width="30%">TAG</th>
+                    <th class="tableheader">DESCRIPTION</th>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;ul&gt;</td>
+                    <td class="tabledata">Defines an unordered list.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;ol&gt;</td>
+                    <td class="tabledata">Defines an ordered list.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;li&gt;</td>
+                    <td class="tabledata">Defines a list item.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;dl&gt;</td>
+                    <td class="tabledata">Defines a description list.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;dt&gt;</td>
+                    <td class="tabledata">Defines a term in a description list.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;dd&gt;</td>
+                    <td class="tabledata">Details the term in a description list.
+                </td>
+                </tr>
+            </table>
+        </dd>
+        <br>
+
+        <dt class="listterm" >
+            <ol style="margin-left: 2%;">
+                <li>    
+                    USING HTML UNORDERED LIST OR BULLETED LIST
+                    <br>
+                    <span class="listdata3">
+                        Unordered lists are ideal for scenarios where the sequence of the items is not important.
+                        <br>
+                        The unordered list items are marked with bullets, also known as bulleted lists. An unordered list starts with the &lt;ul&gt; tag, and each list item begins with the &lt;li&gt; tag.
+                        <br>
+                        <b>SYNTAX:</b>
+                        <span class="code1">
+                            <code>
+                                &lt;ul&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;
+                                &lt;ul&gt;
+                            </code>
+                        </span>
+                        <br>
+                        <b>ATTRIBUTE: </b>
+                        This tag contains two attributes which are listed below: 
+                        <br>
+                        <ul class="ulist">
+                            <li><b>compact: </b>It will render the list smaller.</li>
+                            <li><b>type: </b>It specifies which kind of marker is used in the list.</li>
+                        </ul>
+                        <br>
+                        <b>EXAMPLE: </b>
+                        This example describes the unordered list.
+                        <br><br>
+                        <div class="code2">
+                            <code>
+                                <ol class="olist">
+                                    <br>
+
+                                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                                    <li></li>
+
+                                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Unordered List<span class="pink">&lt;/title&gt;</span></li>
+
+                                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                                    <li></li>
+
+                                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2&gt;</span>Grocery List<span class="pink">&lt;/h2&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;ul&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Bread<span class="pink">&lt/li&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Eggs<span class="pink">&lt/li&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Milk<span class="pink">&lt/li&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>Coffee<span class="pink">&lt/li&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt/ul&gt;</span></li>
+
+                                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                                    <li></li>
+
+                                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                                    <br>
+                                </ol>
+                            </code>
+                        </div>
+                    </span>
+                </li>
+                <br>
+                <li>
+                    USING HTML ORDERED LIST
+                    <br>
+                    <span class="listdata3">
+                        Ordered lists are used when the items need to follow a specific sequence.
+                        <br>
+                        In an ordered list, all list items are marked with numbers by default. An ordered list starts with the &lt;ol&gt; tag, and each list item begins with the &lt;li&gt; tag.
+                        <br>
+                        <b>SYNTAX:</b>
+                        <span class="code1">
+                            <code>
+                                &lt;ol&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+                            &lt;/ol&gt;
+                            </code>
+                        </span>
+                        <br>
+                        <b>ATTRIBUTE: </b>
+                        <br>
+                        <ul class="ulist">
+                            <li><b>compact: </b>
+                                It defines the list should be compacted (compact attribute is not supported in HTML5. Use CSS instead.).
+                            </li>
+                            <li>
+                                <b>reversed: </b>
+                                It defines that the order will be descending.
+                            </li>
+                            <li>
+                                <b>start: </b>
+                                It defines from which number or alphabet the order will start.
+                            </li>
+                            <li>
+                                <b>type: </b>
+                                It defines which type(1, A, a, I, and i) of the order you want in your list of numeric, alphabetic, or roman numbers.
+                            </li>
+                        </ul>
+                        <br>
+                        <b>EXAMPLE:</b>
+                        <br>
+                        This example describes the ordered list with the use of reverse, type, and start attribute.
+                        <br><br>
+                        <div class="code2">
+                            <code>
+                                <ol class="olist">
+                                    <br>
+
+                                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                                    <li></li>
+
+                                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Ordered List<span class="pink">&lt;/title&gt;</span></li>
+
+                                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                                    <li></li>
+
+                                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2&gt;</span>reversed attribute<span class="pink">&lt;/h2&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;ol </span><span class="green">reversed</span><span class="pink"> &gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>HTML<span class="pink">&lt/li&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>CSS<span class="pink">&lt/li&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>JS<span class="pink">&lt/li&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt/ol&gt;</span></li>
+
+                                    <li></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2&gt;</span>start attribute<span class="pink">&lt;/h2&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;ol </span><span class="green">start</span><span class="white">=</span><span class="yellow">"5"</span><span class="pink"> &gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>HTML<span class="pink">&lt/li&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>CSS<span class="pink">&lt/li&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>JS<span class="pink">&lt/li&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt/ol&gt;</span></li>
+
+                                    <li></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2&gt;</span>type attribute<span class="pink">&lt;/h2&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;ol </span><span class="green">type</span><span class="white">=</span><span class="yellow">"i"</span><span class="pink"> &gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>HTML<span class="pink">&lt/li&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>CSS<span class="pink">&lt/li&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;li&gt;</span>JS<span class="pink">&lt/li&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt/ol&gt;</span></li>
+
+                                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                                    <li></li>
+
+                                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                                    <br>
+                                </ol>
+                            </code>
+                        </div>
+                    </span>
+                </li>
+                <br>
+                <li>
+                    USING HTML DESCRIPTION LIST
+                    <br>
+                    <span class="listdata3">
+                        A description list is a list of terms, with a description of each term. Description lists are less common but very useful for definitions, glossaries, or any other key-value pairs of items.
+                        <br>
+                        The &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term name, and the &lt;dd&gt; tag describes each term.
+                        <br>
+                        <b>SYNTAX: </b>
+                        <br>
+                        <span class="code1">
+                            <code>
+                                &lt;dl&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;Item 1&lt;/dt&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Description of Item 1&lt;/dd&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;Item 3&lt;/dt&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Description of Item 2&lt;/dd&gt;<br>
+                                &lt;/dl&gt;
+                            </code>
+                        </span>
+                        <br>
+                        Here, &lt;dt&gt; (description term) is used for the term being defined, and &lt;dd&gt; (description details) is used for the description.
+                        <br>
+                        <b>EXAMPLE:</b>
+                        <br>
+                        This example describes the HTML Description List.
+                        <br><br>
+                        <div class="code2">
+                            <code>
+                                <ol class="olist">
+                                    <br>
+
+                                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                                    <li></li>
+
+                                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Description List<span class="pink">&lt;/title&gt;</span></li>
+
+                                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                                    <li></li>
+
+                                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2&gt;</span>A Description List<span class="pink">&lt;/h2&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;dl&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;dt&gt;</span>Coffee<span class="pink">&lt/dt&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;dd&gt;</span>- 500 gms<span class="pink">&lt/dd&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;dt&gt;</span>Milk<span class="pink">&lt/dt&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;dd&gt;</span>- 1 ltr tetra pack<span class="pink">&lt/dd&gt;</span></li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt/dl&gt;</span></li>
+
+                                    <li></li>
+
+                                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                                    <li></li>
+
+                                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                                    <br>
+                                </ol>
+                            </code>
+                        </div>
+                    </span>
+                </li>
+            </ol>
+        </dt>
+        <br>
+
+        <dt class="listterm">BEST PRACTICES FOR USING HTML LISTS</dt>
+        <br>
+
+        <dd class="listdata">
+            <ul>
+                <li>
+                    <b>SEMANTIC CORRECTNESS: </b>
+                    Always use the appropriate type of list for your content to ensure semantic correctness and improve accessibility.
+                </li>
+                <br>
+                <li>
+                    <b>NESTING LISTS: </b>
+                    HTML lists can be nested inside one another. For example, you can place an unordered list inside an ordered list item to create a hierarchy.
+                </li>
+                <br>
+                <li>
+                    <b>STYLING LISTS: </b>
+                    Use CSS to style lists to match the design of your website. You can change bullet styles in unordered lists, the numbering style in ordered lists, and more.
+                </li>
+                <br>
+                <li>
+                    <b>ACCESSIBILITY: </b>
+                    Make sure your lists are accessible. Properly structured lists help screen readers interpret the content accurately, enhancing the accessibility of your website.
+                </li>
+            </ul>
+        </dd>
+        <br>
+    </dl>
+    <br>
+</body>
+</html>

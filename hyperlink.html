@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .body{
+            border: 5px solid yellow;
+            margin: 2%;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        .listterm{
+            margin-left: 2.5vw;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .listdata{
+            margin-left: 5vw;
+        }
+        .listdata2{
+            margin-left: 7.5vw;
+        }
+        .olist{
+            margin-left: 5%;
+        }
+        .code2{
+            border: 1px solid black;
+            margin-left: 7.5vw;
+            font-size: large;
+            background-color: lightgray;
+            margin-right: 1vw;
+            margin-bottom: 1vh;
+        }
+        .code1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: lightgray;
+            height: 5vh;
+            width: fit-content;
+            padding: 0px 10px;
+            font-size: larger;
+            margin-top: 1%;
+        }
+        .pink{
+            color:rgba(177,38,76,255) ;
+        }
+        .green{
+            color: rgba(122,197,43,255);
+        }
+        .yellow{
+            color: darkgoldenrod;
+        }
+        .gray{
+            color: gray;
+        }
+        .cyan{
+            color: darkcyan;
+        }
+        .white{
+            color: white;
+        }
+        .tableheader{
+            padding: 5%;
+            font-size: large;
+        }
+        .tabledata{
+            padding: 5%;
+            text-align: center;
+            vertical-align: center;
+        }
+        .table{
+            background-color: lightgray;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .image
+        {
+            border: 2.5px solid yellow;
+        }
+        .imagediv
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="heading">
+        <h1>HTML LINKS HYPERLINKS</h1>
+    </div>    
+    <hr><br>
+    <dl class="list">
+        <dt class="listterm">HTML LINKS HYPERLINKS</dt>
+        <br>
+
+        <dd class="listdata">
+           <b> HTML Links</b>, also known as <b>hyperlinks</b>, are defined by the <b>&lt;a&gt;</b> tag in HTML, which stands for “anchor.” These links are essential for navigating between web pages and directing users to different sites, documents, or sections within the same page.
+           <br>
+           The basic attributes of the <a> tag include <b>href</b>, <b>title</b>, and <b>target</b>, among others.
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>SYNTAX:</b>
+            <span class="code1">
+                <code>
+                    &lt;a href="https://www.example.com">&gt;
+                </code>
+            </span>
+        </dd>
+        <br>
+
+        <dt class="listterm">A SIMPLE HTML LINK EXAMPLE</dt>
+        <br>
+
+        <dd class="listdata">
+            In this example, we contains a paragraph instructing users to click on the link labeled “GeeksforGeeks,” which directs to the website “https://www.geeksforgeeks.org”.
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML Links<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span>Click on the following link<span class="pink">&lt;/p&gt;</Headingspan></li>
+                    
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;a&gt;</span> <span class="green">href</span><span class="white">=</span><span class="yellow">"https://www.google.com"</span><span class="pink">&gt;</Headingspan></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google</li>
+                    
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/a&gt;</li>
+                    
+                    <li><span class="pink">&lt;/body&gt;</span></li>    
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+        
+        <dd class="listdata">
+            By default, links will appear as follows in all browsers:
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <ul>
+                <li>An <b>unvisited link</b> is underlined and blue.</li>
+                <li>A <b>visited link</b> is underlined and purple.
+                </li>
+                <li>An <b>active link</b> is underlined and red.
+                </li>
+            </ul>
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            HTML LINKS - TARGET ATTRIBUTE
+        </dt>
+        <br>
+
+        <dd class="listdata">
+            The target attribute in the &lt;a&gt; tag specifies where to open the linked document. It controls whether the link opens in the same window, a new window, or a specific frame.
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <table class="table" border="1">
+                <tr>
+                    <th class="tableheader" width="30%">ATTRIBUTE</th>
+                    <th class="tableheader">DESCRIPTION</th>
+                </tr>
+                <tr>
+                    <td class="tabledata">_blank</td>
+                    <td class="tabledata">Opens the linked document in a new window or tab.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">_self</td>
+                    <td class="tabledata">Opens the linked document in the same frame or window as the link. (Default behavior)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">_parent</td>
+                    <td class="tabledata">Opens the linked document in the parent frame.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">_top</td>
+                    <td class="tabledata">Opens the linked document in the full body of the window.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata">framename</td>
+                    <td class="tabledata">Opens the linked document in a specified frame. The frame&#39;s name is specified in the attribute.
+                    </td>
+                </tr>
+            </table>
+        </dd>
+        <br>
+
+        <dd class="tabledata">
+            <b>EXAMPLE:</b>
+            In this example we demonstrates the use of target attributes in links. Each link opens in a different context: _blank opens in a new window or tab, _self in the same frame, _parent in the parent frame, _top in the full window body, and framename in a specified frame.
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Target Attribute Example<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h3&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Various options available in the Target Attribute</li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/h3&gt;</span></li>
+
+                    <li></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span> If you set the target attribute to "_blank", </li>
+                    
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the link will open in a new browser window or tab.</li>
+                    
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="pink">&lt;/p&gt;</span></li>
+                    </li>
+                    
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;a&gt;</span> <span class="green">href</span><span class="white">=</span><span class="yellow">"https://www.google.com"</span><span class="green"> target</span><span class="white">=</span><span class="yellow">"_blank"</span><span class="pink">&gt;</Headingspan></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google</li>
+                    
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/a&gt;</li>
+
+                        <li></li>
+
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span> If you set the target attribute to "_self", </li>
+                    
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the link will open in the same browser window or tab.</li>
+                        
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="pink">&lt;/p&gt;</span></li>
+                        </li>
+                        
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;a&gt;</span> <span class="green">href</span><span class="white">=</span><span class="yellow">"https://www.google.com"</span><span class="green"> target</span><span class="white">=</span><span class="yellow">"_self"</span><span class="pink">&gt;</Headingspan></li>
+    
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google</li>
+                        
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/a&gt;</li>
+
+                            <li></li>
+
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span> If you set the target attribute to "_top", </li>
+                    
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the link will open in the full body of the window.</li>
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="pink">&lt;/p&gt;</span></li>
+                            </li>
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;a&gt;</span> <span class="green">href</span><span class="white">=</span><span class="yellow">"https://www.google.com"</span><span class="green"> target</span><span class="white">=</span><span class="yellow">"_top"</span><span class="pink">&gt;</Headingspan></li>
+        
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google</li>
+                            
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/a&gt;</li>
+
+                                <li></li>
+
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span> If you set the target attribute to "_parent", </li>
+                    
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the link will open in the parent frame.</li>
+                                
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="pink">&lt;/p&gt;</span></li>
+                                </li>
+                                
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;a&gt;</span> <span class="green">href</span><span class="white">=</span><span class="yellow">"https://www.google.com"</span><span class="green"> target</span><span class="white">=</span><span class="yellow">"_parent"</span><span class="pink">&gt;</Headingspan></li>
+            
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Google</li>
+                                
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/a&gt;</li>
+                    
+                    <li><span class="pink">&lt;/body&gt;</span></li>    
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            LINKING DIFFERENT HTML ELEMENTS
+        </dt>
+        <br>
+
+        <dd class="listdata">
+            Below are examples of how to link different HTML elements with their respective code snippets
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <table class="table" border="1">
+                <tr>
+                    <th class="tableheader">ELEMENT TO INTERLINK</th>
+                    <th class="tableheader">SPECIFIC CODE</th>
+                </tr>
+                <tr>
+                    <td class="tabledata"><b>Linking to an image</b></td>
+                    <td class="tabledata">&lt;a href="image.jpg"&gt;&lt;img src="image.jpg" alt="Image"&gt;&lt;/a&gt;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata"><b>Linking to an Email Address</b></td>
+                    <td class="tabledata">&lt;a href="mailto:someone@example.com"&gt;Send Email&lt;/a&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata"><b>Phone Number</b></td>
+                    <td class="tabledata">&lt;a href="tel:+1234567890"&gt;Call Now&lt;/a&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata"><b>Button</b></td>
+                    <td class="tabledata">&lt;a href="https://www.example.com"&gt; &lt;button&gt;Visit Example&lt;/button&gt; &lt;/a&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata"><b>Link to Download File</b></td>
+                    <td class="tabledata">&lt;a href="file.pdf" download&gt;Download File&lt;/a&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tabledata"><b>Link Title</b></td>
+                    <td class="tabledata">&lt;a href="https://www.example.com" title="Visit Example"&gt;Link Text&lt;/a&gt;
+                    </td>
+                </tr>
+            </table>
+        </dd>
+    </dl>
+    <br>
+</body>
+</html>

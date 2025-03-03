@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .body{
+            border: 5px solid yellow;
+            margin: 2%;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        .listterm{
+            margin-left: 2.5vw;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .listdata{
+            margin-left: 5vw;
+        }
+        .olist{
+            margin-left: 5%;
+            /* border: 1px solid black; */
+        }
+        #code{
+            border: 1px solid black;
+            margin-left: 7.5vw;
+            font-size: large;
+            background-color: lightgray;
+            margin-right: 1vw;
+            margin-bottom: 1vh;
+        }
+        .pink{
+            color:rgba(177,38,76,255) ;
+        }
+        .green{
+            color: rgba(122,197,43,255);
+        }
+        .yellow{
+            color: darkgoldenrod;
+        }
+        .gray{
+            color: gray;
+        }
+        .white{
+            color: white;
+        }
+        .tableheader{
+            padding: 5%;
+            font-size: large;
+        }
+        .tabledata{
+            padding: 5%;
+        }
+        .table{
+            background-color: lightgray;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="heading"><h2>STRUCTURE OF HTML</h2></div>
+    <hr><br>
+    <dl class="list">
+        <dt class="listterm">STRUCTURE OF AN HTML DOCUMENT</dt>
+        <br>
+        <dd class="listdata">An HTML document consists of specific tags that form the skeleton of the page. Here&#39;s a look at a basic HTML document structure</dd>
+        <br>
+        <dd class="listdata" id="code">
+            <code>
+                <ol class="olist">
+                    <br>
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+                    <li><span class="pink">&lt;html</span><span class="green"> lang</span> =<span class="yellow">&#34en&#34</span><span class="pink">&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;meta </span><span class="green">charset</span>=<span class="green">&#34UTF-8&#34</span><span class="pink"> /&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;meta </span><span class="green">name</span>=<span class="yellow">&#34;viewport&#34;</span> <span class="green">content</span>=<span class="yellow">&#34;width=device-width, initial-scale=1.0&#34;</span><span class="pink"> /&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Structure of HTML Document<span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="gray">&lt;!-- Main content of website --&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h1&gt;</span>HTML Basic Structure<span class="pink">&lt;/h1&gt;</Structurespan></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;p&gt;</span>This is how a basic HTML pagle is structured !<span class="pink">&lt;/p&gt;</span></li>
+
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+        <dd class="listdata">The tags used in the block are explained in brief as follows :</dd>
+        <br>
+        <dd class="listdata">
+            <ol class="olist">
+                <li><b>&lt;!DOCTYPE HTML&gt;: </b>The &lt;!DOCTYPE html&gt; declaration is placed at the beginning of the document. It tells the browser that the document follows HTML5 standards, ensuring consistent rendering across browsers.</li>
+                <br>
+                <li><b>&lt;html&gt; Tag: </b>The &lt;html&gt; tag wraps the entire document, serving as the root element of an HTML page. It typically includes the lang attribute to specify the language of the content.</li>
+                <br>
+                <li><b>&lt;head&gt; Section: </b>The &lt;head&gt; section contains metadata, scripts, styles, and other information not displayed directly on the page but essential for functionality and SEO.</li>
+                <br>
+                <li><b>&lt;body&gt; Section: </b>The &lt;body&gt; section contains all the visible content of the web page, including text, images, videos, links, and more. This is where you&#34;ll add the main elements to display on the page.</li>
+            </ol>
+        </dd>
+        <br><br>
+
+        <dt class="listterm">TAGS AND ELEMENTS FOR STRUCTURING AN HTML DOCUMENT</dt>
+        <br>
+        <dd class="listdata">HTML tags are structural components enclosed in angle brackets. They are typically opened and closed with a forward slash (e.g., &lt;h1&gt;&lt;/h1&gt;). Some tags are self-closing, while others support attributes like width, height, and controls for defining properties or storing metadata.</dd>
+        <br>
+        <dd class="listdata"><h4>There are generally two types of tags in HTML</h4></dd>
+        <br>
+        <dd class="listdata">
+            <ol class="olist">
+                <li><b>Paired Tags: </b>These tags come in pairs i.e. they have both opening(&lt; &gt;) and closing(&lt;/ &gt;) tags.</li>
+                <br>
+                <li><b>Empty Tags: </b>These tags are self-closing and do not require a closing tag.</li>
+            </ol>
+        </dd>
+        <br><br>
+
+        <dt class="listterm">HTML5</dt>
+        <br>
+        <dd class="listdata">HTML 5 is the fifth and current version of HTML. It has improved the markup available for documents and has introduced application programming interfaces(API) and Document Object Model(DOM). It has introduced various new features like drag and drop, geo-location services</dd>
+        <br><br>
+
+        <dt class="listterm">HTML4 v/s HTML5</dt>
+        <br>
+        <dd class="table">
+            <table border="1">
+                <tr>
+                    <th class="tableheader">HTML4</th>
+                    <th class="tableheader">HTML5</th>
+                </tr>
+                <tr>
+                    <td class="tabledata">It didn&#39;t support audio and video without the use of flash player support.</td>
+                    <td class="tabledata">It supports audio and video controls with the use of &lt;audio&gt; and &lt;video&gt; tags.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">It uses cookies to store temporary data.</td>
+                    <td class="tabledata">It uses SQL databases and application cache to store offline data.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">Does not allow JavaScript to run in the browser.</td>
+                    <td class="tabledata">Allows JavaScript to run in the background. This is possible due to JS Web worker API in HTML5.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">Vector graphics are possible in HTML with the help of various technologies such as VML, Silver-light, Flash, etc.</td>
+                    <td class="tabledata">Vector graphics are additionally an integral part of HTML5 like SVG and Canvas.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">It does not allow drag and drop effects.</td>
+                    <td class="tabledata">It allows drag and drop effects.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">Not possible to draw shapes like circle, rectangle, triangle etc.</td>
+                    <td class="tabledata">HTML5 allows to draw shapes like circle, rectangle, triangle etc.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">It works with all old browsers.</td>
+                    <td class="tabledata">It supported by all new browser like Firefox, Mozilla, Chrome, Safari, etc.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;HTML&gt;, &lt;Body&gt;, and &lt;Head&gt; tags are mandatory while writing a HTML code.</td>
+                    <td class="tabledata">These tags can be omitted while writing HTML code.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">Older version of HTML are less mobile-friendly.</td>
+                    <td class="tabledata">HTML5 language is more mobile-friendly.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">Doctype declaration is too long and complicated.</td>
+                    <td class="tabledata">Doctype declaration is quite simple and easy.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">Elements like nav, header were not present.</td>
+                    <td class="tabledata">New element for web structure like nav, header, footer etc.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">Character encoding is long and complicated.</td>
+                    <td class="tabledata">Character encoding is simple and easy.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">It can not handle inaccurate syntax.</td>
+                    <td class="tabledata">It is capable of handling inaccurate syntax.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">Being an older version , it is not fast , flexible , and efficient as compared to HTML5.</td>
+                    <td class="tabledata">It is efficient, flexible and more fast in comparison to HTML4.</td>
+                </tr>
+            </table>
+        </dd>
+        <br>
+        <dd class="listdata">There are many HTML4 elements which have been modified or removed from HTML5.</dd>
+        <br>
+        <dd class="table">
+            <table border="1" width="100%">
+                <tr>
+                    <th class="tableheader" width="50%">ELEMENT</th>
+                    <th class="tableheader">IN HTML5</th>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;acronym&gt;</td>
+                    <td class="tabledata">Changed to &lt;abbr&gt;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;dir&gt;</td>
+                    <td class="tabledata">Changed to &lt;ul&gt;</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;frameset&gt;</td>
+                    <td class="tabledata">Removed</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;frame&gt;</td>
+                    <td class="tabledata">Removed</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;strike&gt;</td>
+                    <td class="tabledata">No new tag. CSS is used for this.</td>
+                </tr>
+                <tr>
+                    <td class="tabledata">&lt;font&gt;</td>
+                    <td class="tabledata">No new tag. CSS is used for this.</td>
+                </tr>
+            </table>
+        </dd>
+    </dl>
+    <br>
+</body>
+</html>

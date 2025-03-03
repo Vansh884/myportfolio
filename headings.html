@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .body{
+            border: 5px solid yellow;
+            margin: 2%;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        .listterm{
+            margin-left: 2.5vw;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .listdata{
+            margin-left: 5vw;
+        }
+        .listdata2{
+            margin-left: 7.5vw;
+        }
+        .olist{
+            margin-left: 5%;
+        }
+        .code2{
+            border: 1px solid black;
+            margin-left: 7.5vw;
+            font-size: large;
+            background-color: lightgray;
+            margin-right: 1vw;
+            margin-bottom: 1vh;
+        }
+        .code1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: lightgray;
+            height: 5vh;
+            width: fit-content;
+            padding: 0px 10px;
+            font-size: larger;
+            margin-top: 1%;
+        }
+        .pink{
+            color:rgba(177,38,76,255) ;
+        }
+        .green{
+            color: rgba(122,197,43,255);
+        }
+        .yellow{
+            color: darkgoldenrod;
+        }
+        .gray{
+            color: gray;
+        }
+        .cyan{
+            color: darkcyan;
+        }
+        .white{
+            color: white;
+        }
+        .tableheader{
+            padding: 5%;
+            font-size: large;
+        }
+        .tabledata{
+            padding: 5%;
+            text-align: center;
+            vertical-align: center;
+        }
+        .table{
+            background-color: lightgray;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .image
+        {
+            border: 2.5px solid yellow;
+        }
+        .imagediv
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="heading">
+        <h1>HTML HEADINGS</h1>
+    </div>
+    <hr><br>
+    <dl class="list">
+        <dt class="listterm">HTML HEADINGS</dt>
+        <br>
+
+        <dd class="listdata">
+            <b>HTML headings</b> are used to define the titles and subtitles of sections on a webpage. They help organize the content and create a structure that is easy to navigate.
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <ul>
+                <li>Proper use of headings enhances readability by organizing content into clear sections.</li>
+                <li>Search engines utilize headings to understand page structure, aiding in SEO.</li>
+            </ul>
+        </dd>
+        <br>
+
+        <dd class="listdata code2">
+            <code>
+                <ol class="olist">
+                    <br>
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Heading Tags <span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h1&gt;</span>This is the Main Heading<span class="pink">&lt;/h1&gt;</Headingspan></li>
+                    
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2&gt;</span>This is a Subheading<span class="pink">&lt;/h2&gt;</Headingspan></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h3&gt;</span>This is a Smaller Subheading<span class="pink">&lt;/h3&gt;</Headingspan></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h4&gt;</span>This is a Sub-Subheading<span class="pink">&lt;/h4&gt;</Headingspan></li>
+                    
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h5&gt;</span>This is a Minor Subheading<span class="pink">&lt;/h5&gt;</Headingspan></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h6&gt;</span>This is a Smallest Heading<span class="pink">&lt;/h6&gt;</Headingspan></li>
+                    
+                    <li><span class="pink">&lt;/body&gt;</span></li>    
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <ul>
+                <li>This code uses HTML heading tags (&lt;h1&gt; to &lt;h6&gt;) to create headings that range from the main heading to the smallest subheading.</li>
+                <li>Each tag shoes the hierarchy of the content, helping organize the structure of the webpage.</li>
+            </ul>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>NOTE: </b>the &#39;h&#39; inside the tag should always be in lowercase.
+        </dd>
+        <br>
+
+        <dt class="listterm">LEVELS OF HTML HEADING TAGS</dt>
+        <br>
+
+        <dd class="listdata">
+            HTML offers <b>six levels of heading tags</b>, each serving a different purpose in structuring your content
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <div class="imagediv">
+                <img class="image" src="heading.png" alt="Different Levels of Headings">
+            </div>
+            <br>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>&lt;h1&gt; - MAIN HEADING &lbrack;LARGEST&rbrack;</b>
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <ul>
+                <li>Represents the primary focus of the page, usually used for the main title.</li>
+                <li>Use only one &lt;h1&gt; tag per page for the best SEO practices.</li>
+                <li>Makes it clear to both users and search engines what the main topic is.</li>
+            </ul>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>&lt;h2&gt; - SUBHEADINGS</b>
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <ul>
+                <li>Ideal for dividing the content into major sections.</li>
+                <li>If the content has further subsections, use <h3> to create a logical flow.</li>
+            </ul>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>&lt;h3&gt; TO &lt;h6&gt; - SMALLER HEADINGS</b>
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <ul>
+                <li>These heading levels are used for finer subdivisions, gradually decreasing in size and importance.</li>
+                <li>&lt;h3&gt; is used for subsections under &lt;h2&gt;, while &lt;h4&gt; to &lt;h6&gt; are used for additional, less important subdivisions.</li>
+                <li>&lt;h6&gt; defines the least important heading.</li>
+            </ul>
+        </dd>
+        <br>
+
+        <dt class="listterm">CUSTOMIZATION IN HTML HEADING TAGS</dt>
+        <br>
+
+        <dd class="listdata">
+            <b>EXAMPLE: </b>
+            Here&#39;s how you can apply basic styles to HTML heading tags
+        </dd>
+        <br>
+
+        <dd class="listdata2 code2">
+            <code>
+                <ol class="olist">
+                    <br>
+                    
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+
+
+                    <li><span class="pink">&lt;html&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;head&gt;</span></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>Heading Tags <span class="pink">&lt;/title&gt;</span></li>
+
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;body&gt;</span></li>
+
+                    <li></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h1&gt;</span>H1 Heading<span class="pink">&lt;/h1&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="gray">&lt;!-- With the help of Style attribute you can customize the size of the heading, As done below--&gt;</span></li>
+
+                    <li></li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h1 </span><span class="green">style</span><span class="white">=</span><span class="yellow">"font-size: 50px"</span><span class="pink">&gt;</span>H1 with a new <size class="span pink">&lt;/h1&gt;</size></li>
+
+                    <li></li>
+
+                    <li><span class="gray">&lt;!-- Here font-size is the property by which  we can modify the heading. Here we kept it 50px i.e. 50 pixels --&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+
+                    <li></li>
+
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+                    
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+
+        <dd class="listdata">
+            <b>OUTPUT:</b>
+        </dd>
+        <br>
+
+        <dd class="listdata2">
+            <div class="imagediv">
+                <img class="image" src="heading2.png" alt="Changed H1 heading">
+            </div>
+            <br>
+        </dd>
+        <br>
+
+        <dt class="listterm">
+            BEST PRACTICES FOR USING HTML HEADINGS
+        </dt>
+        <br>
+
+        <dd class="listdata">
+            <ul>
+                <br>
+                <li>
+                    <b>USE ONLY ONE &lt;h1&gt; PER PAGE : </b>
+                    The &lt;h1&gt; tag should be reserved for the main title of the page. Too many &lt;h1&gt; tags can confuse both users and search engines about the content&#39;s priority.
+                </li>
+                <br>
+                <li>
+                    <b>MAINTAIN A LOGICAL STRUCTURE : </b>
+                    Follow a logical hierarchy of headings (&lt;h1&gt; → &lt;h2&gt; → &lt;h3&gt;) to ensure content is organized. Don&#39;t jump directly from &lt;h1&gt; to &lt;h4&gt;, as it can make the content harder to navigate.
+                </li>
+                <br>
+                <li>
+                    <b>KEEP HEADINGS DESCRIPTIVE : </b>
+                    Headings should clearly describe the content that follows. This makes it easier for readers to understand what each section is about.
+                </li>
+                <br>
+                <li>
+                    <b>AVOID OVERUSING HEADING TAGS</b>
+                    Headings are for organizing content, not for styling text. Use them where appropriate and avoid using heading tags for emphasis or styling alone.
+                </li>
+
+                <br>
+            </ul>
+        </dd>
+        <br>
+    </dl>
+    <br>
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .body{
+            border: 5px solid yellow;
+            margin: 2%;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        .listterm{
+            margin-left: 2.5vw;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .listdata{
+            margin-left: 5vw;
+        }
+        .listdata2{
+            margin-left: 7.5vw;
+        }
+        .olist{
+            margin-left: 5%;
+        }
+        .code2{
+            border: 1px solid black;
+            margin-left: 7.5vw;
+            font-size: large;
+            background-color: lightgray;
+            margin-right: 1vw;
+            margin-bottom: 1vh;
+        }
+        .code1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: lightgray;
+            height: 5vh;
+            width: fit-content;
+            padding: 0px 10px;
+            font-size: larger;
+            margin-top: 1%;
+        }
+        .pink{
+            color:rgba(177,38,76,255) ;
+        }
+        .green{
+            color: rgba(122,197,43,255);
+        }
+        .yellow{
+            color: darkgoldenrod;
+        }
+        .gray{
+            color: gray;
+        }
+        .cyan{
+            color: darkcyan;
+        }
+        .white{
+            color: white;
+        }
+        .tableheader{
+            padding: 5%;
+            font-size: large;
+        }
+        .tabledata{
+            padding: 5%;
+            text-align: center;
+            vertical-align: center;
+        }
+        .table{
+            background-color: lightgray;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="heading"><h1>HTML ATTRIBUTES</h1></div>
+    <hr><br>
+    <dl class="list">
+        <dt class="listterm">HTML ATTRIBUTES</dt>
+        <br>
+        <dd class="listdata"><strong>HTML Attributes</strong> are special words <strong>used within the opening tag of an HTML element.</strong> They provide additional information about HTML elements. HTML attributes are used to configure and adjust the element&#39;s behavior, appearance, or functionality in a variety of ways.</dd>
+        <br>
+        <dd class="listdata">Each attribute has a name and a value, formatted as <strong>name=”value”</strong>. Attributes tell the browser how to render the element or how it should behave during user interactions.</dd>
+        <br>
+        <dd class="listdata"><h4>SYNTAX:</h4></dd>
+        <br>
+        <dd class="listdata code1">
+            <code>
+                <b>&lt;tagname attribute_name = “attribute_value”&gt;</b> content… <b>&lt;/tagname&gt;</b>
+            </code>
+        </dd>
+        <br><br>
+        <dt class="listterm">CODE EXAMPLE OF USING HTML ATTRIBUTES</dt>
+        <br>
+        <dd class="listdata">This HTML code demonstrates the use of the <strong>src attribute</strong> within the &lt;img&gt; tag to display an image.
+        </dd>
+        <br>
+        <dd class="listdata code2">
+            <code>
+                <ol class="olist">
+                    <br>
+                    <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+                    <li><span class="pink">&lt;html&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;head&gt;</span></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML img src attribute<span class="pink">&lt;/title&gt;</span></li>
+                    <li><span class="pink">&lt;/head&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;body&gt;</span></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;img </span><span class="green">src</span><span class="yellow">=</span><span class="yellow">"C:\Users\vansh\OneDrive\Desktop\New folder\HTML_Image_Tag.avif"</span><span class="pink">&gt;</span></li>
+                    <li><span class="pink">&lt;/body&gt;</span></li>
+                    <li></li>
+                    <li><span class="pink">&lt;/html&gt;</span></li>
+                    <br>
+                </ol>
+            </code>
+        </dd>
+        <br>
+        <dd class="listdata"><b>In this example:</b></dd>
+        <br>
+        <dd class="listdata">
+            <ul class="ulist">
+                <li><b>Tag:</b> &lt;img&gt;</li>
+                <li><b>Attribute:</b> src</li>
+                <li><b>Value of Attribute:</b> "C:\Users\vansh\OneDrive\Desktop\vansh.jpg"</li>
+                <li><b>Purpose:</b> The &lt;img&gt; tag is used for embedding images in an HTML page. The src attribute within the &lt;img&gt; tag specifies the path to the image file you wish to display. This attribute is crucial as it directs the browser to the image&#39;s location on the internet or a local directory.</li>
+            </ul>
+        </dd>
+        <br><br>
+        <dt class="listterm">COMPONENTS OF AN ATTRIBUTE</dt>
+        <br>
+        <dd class="listdata">An HTML attribute consists of two primary components:</dd>
+        <br>
+        <dd class="listdata">
+            <ol class="olist">
+                <li><b>attribute_name: </b>This is the name of the attribute, which specifies what kind of additional information or property you are defining for the element. Common attribute names include href, src, class, id, etc.</li>
+                <li><b>attribute_value: </b> The value is assigned to the attribute to define the specific setting or behavior. It is always placed in quotes.</li>
+            </ol>
+        </dd>
+        <br><br>
+        <dt class="listterm">TYPES OF HTML ATTRIBUTES</dt>
+        <br>
+        <dd class="listdata">HTML attributes can be broadly categorized based on their function and the type of elements they modify. For example :</dd>
+        <br>
+        <dd class="listdata"><h3>GLOBAL ATTRIBUTES</h3></dd>
+        <br>
+        <dd class="listdata2">These attributes can be used with any HTML element (though their effects might vary based on the element):</dd>
+        <br>
+        <table class="table" border=1>
+            <tr>
+                <th class="tableheader" width="50%">ATTRIBUTE</th>
+                <th class="tableheader">DESCRIPTION</th>
+            </tr>
+            <tr>
+                <td class="tabledata">class</td>
+                <td class="tabledata">Groups elements and allows styling.</td>
+            </tr>
+            <tr>
+                <td class="tabledata">style</td>
+                <td class="tabledata">Inline CSS styles.</td>
+            </tr>
+            <tr>
+                <td class="tabledata">src</td>
+                <td class="tabledata">Specifies the source of various resources, such as image URLs for the img element, video URLs for the video element, and audio URLs for the audio element.</td>
+            </tr>
+            <tr>
+                <td class="tabledata">id</td>
+                <td class="tabledata">Assigns a unique identifier to an element, allowing targeting with CSS or JavaScript.</td>
+            </tr>
+            <tr>
+                <td class="tabledata">href</td>
+                <td class="tabledata">Defines the hyperlink destination within the a element, enabling navigation.</td>
+            </tr>
+            <tr>
+                <td class="tabledata">alt</td>
+                <td class="tabledata">Provides alternative text for images, essential for accessibility and SEO.</td>
+            </tr>
+            <tr>
+                <td class="tabledata">title</td>
+                <td class="tabledata">Creates a tooltip that appears when a user hovers over the element.</td>
+            </tr>
+            <tr>
+                <td class="tabledata">width</td>
+                <td class="tabledata">Sets the width of the element.</td>
+            </tr>
+            <tr>
+                <td class="tabledata">height</td>
+                <td class="tabledata">Sets the height of the element.</td>
+            </tr>
+            <tr>
+                <td class="tabledata">align</td>
+                <td class="tabledata">Aligns the element horizontally.</td>
+            </tr>
+            <tr>
+                <td class="tabledata">valign</td>
+                <td class="tabledata">Aligns the element vertically.</td>
+            </tr>
+            <tr>
+                <td class="tabledata">border</td>
+                <td class="tabledata">Used for providing border to the element; used with &lt;table&gt;</td>
+            </tr>
+            <tr>
+                <td class="tabledata">bgcolor</td>
+                <td class="tabledata">Used to change background color of the element.</td>
+            </tr>
+        </table>
+    
+        <br>
+    <dd class="listdata"><b>Some other main types of HTML attributes are:</b></dd>
+    <br>
+    <dd class="listdata2">
+        <ul class="ulist">
+            <li style="margin-bottom: 0.5%;"><b>Event Attributes: </b>These define the actions to be taken on specific browser events.</li>
+            <li style="margin-bottom: 0.5%;"><b>Input Attributes: </b>Specific to input elements within &lt;form&gt; tags.</li>
+            <li style="margin-bottom: 0.5%;"><b>Image Attributes: </b>Specific to the &lt;img&gt; element for handling images.</li>
+            <li style="margin-bottom: 0.5%;"><b>Link Attributes: </b>Specific to linking elements like &lt;a&gt; and &lt;link&gt;.</li>
+            <li style="margin-bottom: 0.5%;"><b>Table Attributes: </b>Used with table elements like &lt;table&gt;, &lt;th&gt;, &lt;tr&gt;, and &lt;td&gt;.</li>
+            <li style="margin-bottom: 0.5%;"><b>Style Attributes: </b>Define styles directly on an element.</li>
+            <li style="margin-bottom: 0.5%;"><b>Media Attributes: </b>Related to media elements like &lt;audio&gt; and &lt;video&gt;.</li>
+            <li style="margin-bottom: 0.5%;"><b>Accessibility Attributes: </b> Help improve accessibility, such as alt for images and aria-* attributes.</li>
+            <li style="margin-bottom: 0.5%;"><b>Meta Attributes: </b>Used with meta elements to specify metadata like charset.</li>
+        </ul>
+    </dd>
+    <br>
+    <dt class="listterm">COMMON HTML ATTRIBUTES</dt>
+    <br>
+    <dd class="listdata">
+        Let&#39;s take look at some of the most commonly used HTML attributes:
+    </dd>
+    <br>
+    <dd class="listdata2">
+        <ol>
+            <li><h3>HTML alt ATTRIBUTE</h3><br>
+                The alt attribute in HTML provides alternative text for an image if the image cannot be displayed. It improves accessibility and provides context for screen readers. <br><br>
+                <b>Example:</b> This example explains the HTML <b>alt Attributes</b> to specify the name of the file when the image is not loaded properly.
+                <br><br>
+                <dd class="code2">
+                    <code>
+                        <ol class="olist">
+                            <br>
+                            <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+                            <li><span class="pink">&lt;html&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;head&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML img alt Attribute<span class="pink">&lt;/title&gt;</span></li>
+                            <li><span class="pink">&lt;/head&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;body&gt;</span></li>
+                            <li></li>
+                            <li><span class="gray">&lt;!--If the image is not found or the img field is left blank the alt value gets displayed--&gt;</span></li>
+                            <li></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;img </span><span class="green">src</span><span class="yellow">="C:\Users\vansh\OneDrive\Desktop\New folder\HTML_Image_Tag.avif"</span> <span class="green">alt</span><span class="yellow">="The Logo"</span><span class="pink">&gt;&lt;br&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;img </span><span class="green">src</span><span class="yellow">=""</span> <span class="green">alt</span><span class="yellow">="Since the src value is blank, the alt value is diplayed"</span><span class="pink">&gt;</span></li>
+                            <li><span class="pink">&lt;/body&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;/html&gt;</span></li>
+                            <br>
+                        </ol>
+                    </code>
+                </dd>
+            </li>
+            <br>
+            <li><h3>HTML width AND height ATTRIBUTE</h3><br>The <b>width and height</b> Attribute is used to adjust the width and height of an image(in pixels). <br><br>
+                <b>Example:</b> This example explains the HTML <b>width & height</b> Attributes to specify the different sizes of the images.
+                <br><br>
+                <dd class="code2"><code>
+                    <ol class="olist">
+                        <br>
+                        <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+                            <li><span class="pink">&lt;html&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;head&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML img alt Attribute<span class="pink">&lt;/title&gt;</span></li>
+                            <li><span class="pink">&lt;/head&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;body&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;img </span><span class="green">src</span><span class="yellow">="C:\Users\vansh\OneDrive\Desktop\New folder\HTML_Image_Tag.avif"</span> <span class="green">width</span><span class="yellow">="300px"</span> <span class="green">height</span><span class="yellow">="100px"</span><span class="pink">&gt;&lt;br&gt;</span></li>
+                            <li><span class="pink">&lt;/body&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;/html&gt;</span></li>
+                        <br>
+                    </ol>
+                </code></dd>    
+            </li>       
+            <br>
+            <li><h3>HTML id ATTRIBUTE</h3><br>
+                The id attribute in HTML assigns a unique identifier to an element, allowing it to be targeted by CSS and JavaScript for styling and manipulation purposes. <br><br>
+                <b>Example:</b>This example explains the HTML <b>id Attribute</b> to specify the unique value for the specific element.
+                <br><br>
+                <dd class="code2">
+                    <code>
+                        <ol class="olist">
+                            <br>
+                            <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+                            <li><span class="pink">&lt;html&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;head&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;style&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cyan">#cyancolor</span> <span class="white">&lbrace;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">color</span><span class="white">: </span><span class="pink">green</span><span class="white">;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">&rbrace;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/style&gt;</span></li>
+                            <li><span class="pink">&lt;/head&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;body&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h1 </span><span class="green">id</span><span class="white">=</span><span class="yellow">"cyancolor"</span><span class="pink">&gt;</span>New HTML Page<span class="pink">&lt;/h1&gt;</span></li>
+                            <li><span class="pink">&lt;/body&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;/html&gt;</span></li>
+                            <br>
+                        </ol>
+                    </code>
+                </dd>
+            </li>
+            <br>
+            <li><h3>HTML title ATTRIBUTE</h3><br>
+                The <b>title</b> attribute is used to explain an element by hovering the mouse over it. The behavior differs with various elements but generally, the value is displayed while loading or hovering the mouse pointer over it.
+                <br>
+                <b>Example:</b> This example explains the HTML <b>title Attributes</b> to specify the metadata for the element by hovering the mouse over it.
+                <br><br>
+                <dd class="code2">
+                    <code>
+                        <ol class="olist">
+                            <br>
+                            <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+                            <li><span class="pink">&lt;html&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;head&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML title Attribute<span class="pink">&lt;/title&gt;</span></li>
+                            <li><span class="pink">&lt;/head&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;body&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h3 </span><span class="green">title</span><span class="white">=</span><span class="yellow">"Hello HTML Page</span><span class="pink">&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hover to see the effect</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/h3&gt;</span></li>
+                            <li><span class="pink">&lt;/body&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;/html&gt;</span></li>
+                            <br>
+                        </ol>
+                    </code>
+                </dd>
+            </li>
+            <br>
+            <li>
+                <h3>HTML href ATTRIBUTE</h3><br>
+                The <b>href attribute</b> in HTML, used with the &lt;a&gt; tag, specifies a link destination. Clicking the linked text navigates to this address. Adding `target=”_blank”` opens it in a new tab. <br>
+                <b>Example:</b> This example explains the HTML <b>href Attributes</b> specify the link address of the file.
+                <br><br>
+                <dd class="code2">
+                    <code>
+                        <ol class="olist">
+                            <br>
+                            <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+                            <li><span class="pink">&lt;html&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;head&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML title Attribute<span class="pink">&lt;/title&gt;</span></li>
+                            <li><span class="pink">&lt;/head&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;body&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;a </span><span class="green">href</span><span class="white">=</span><span class="yellow">"https://www.google.com" </span><span class="pink">&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click to open in the same tab</li>
+                            <li><span class="pink">&lt;/a&gt;&lt;br&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;a </span><span class="green">href</span><span class="white">=</span><span class="yellow">"https://www.google.com" </span><span class="green">target</span><span class="white">=</span><span class="yellow">"_blank" </span><span class="pink">&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click to open in a different tab</li>
+                            <li><span class="pink">&lt;/a&gt;</span></li>
+                            <li><span class="pink">&lt;/body&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;/html&gt;</span></li>
+                            <br>
+                        </ol>
+                    </code>
+                </dd>
+            </li>
+            <br>
+            <li>
+                <h3>HTML style ATTRIBUTE</h3><br>
+                The <b>style attribute</b> is used to provide various CSS effects to the HTML elements such as increasing font-size, changing font-family, coloring, etc. <br>
+                <b>Example:</b> This example explains the HTML <b>style Attributes</b> to specify the style properties for the HTML element.
+                <br><br>
+                <dd class="code2">
+                    <code>
+                        <ol class="olist">
+                            <br>
+                            <li><span class="white">&lt;!DOCTYPE html&gt;</span></li>
+                            <li><span class="pink">&lt;html&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;head&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;title&gt;</span>HTML title Attribute<span class="pink">&lt;/title&gt;</span></li>
+                            <li><span class="pink">&lt;/head&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;body&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2 </span><span class="green">style</span><span class="white">=</span><span class="yellow">"font-family:Chaparral Pro Light;"</span><span class="pink">&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello HTML Page.</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/h2&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h3 </span><span class="green">style</span><span class="white">=</span><span class="yellow">"font-size:20px;"</span><span class="pink">&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello HTML Page.</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/h3&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2 </span><span class="green">style</span><span class="white">=</span><span class="yellow">"color:#8CCEF9;"</span><span class="pink">&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello HTML Page.</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/h2&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;h2 </span><span class="green">style</span><span class="white">=</span><span class="yellow">"text-align:center;"</span><span class="pink">&gt;</span></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello HTML Page.</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">&lt;/h2&gt;</span></li>
+                            <li><span class="pink">&lt;/body&gt;</span></li>
+                            <li></li>
+                            <li><span class="pink">&lt;/html&gt;</span></li>
+                            <br>
+                        </ol>
+                    </code>
+                </dd>
+            </li>
+            <br>
+        </ol>
+    </dd>
+    <br>
+    <dt class="listterm">IMPORTANT POINTS ABOUT HTML ATTRIBUTES</dt>
+    <br>
+    <dd class="listdata">
+        <ol>
+            <br>
+            <li><b>ALWAYS USE LOWERCASE ATTRIBUTES</b></li><br>
+            <span>You can use either uppercase or lowercase letters for defining attributes. For example, both alt and ALT in an &lt;img&gt; tag are valid. However, it is recommended to use lowercase attributes as per W3C guidelines for consistency and better readability.</span>
+            <br><br>
+
+            <li><b>ALWAYS QUOTE ATTRIBUTE VALUES</b></li><br>
+            <span>The HTML standard does not require quotes around attribute values in certain situations. However, W3C recommends always using quotes for attribute values, and quotes are mandatory for stricter document types like XHTML. Using quotes helps avoid errors, especially when the attribute value contains spaces or special characters.</span>
+            <br><br>
+
+            <li><b>DECLARE QUOTE AS AN ATTRIBUTE VALUE</b></li>
+            <br>
+            <span>You can use either <b>single (')</b> or <b>double (")</b> quotes for attribute values in HTML, but it is essential to be consistent throughout your document. If the attribute value contains a double quote, then use single quotes to enclose it, and vice versa.For simplicity, it is a good practice to consistently use double quotes, as it aligns with the convention used in many HTML examples and tutorials. <br>
+            <br><b>EXAMPLE:</b><br>
+            <span class="code1"><code>&lt;input type="text" placeholder='Enter your "username" here'&gt;</code></span><br>
+            In this example, the <B>attribute value</B> itself contains double quotes ("username"), so the entire value is enclosed within single quotes to avoid confusion.
+            </span>
+            <br><br>
+
+            <li><b>BOOLEAN ATTRIBUTES SHOULD BE WRITTEN WITHOUT VALUES</b></li>
+            <br>
+                <span>
+                    Boolean attributes do not require a value. If the attribute is present, it is considered true. For example, the checked attribute of an &lt;input&gt; element is correctly written as:
+                    <br><br>
+                    <b>EXAMPLE:</b>
+                    <br>
+                    <span class="code1">
+                        <code>
+                            &lt;input type="checkbox" checked&gt;
+                        </code>
+                    </span>
+                    <br>
+                    Writing checked="checked" also works, but it is redundant. Simply including the attribute is enough to represent a true state.
+                </span>
+            <br><br>
+
+            <li>
+                <b>PROPER ATTRIBUTE ORDER FOR READABILITY</b></li>
+                <br>
+                <span>
+                    Although HTML does not enforce an order for attributes, following a consistent order improves readability and maintainability. It is common practice to order attributes like this: id, class, other global attributes, specific attributes, and finally, event attributes. 
+                    <br><br>
+                    <b>EXAMPLE:</b>
+                    <br>
+                    <span class="code1">
+                        <code>
+                            &lt;button id="btn1" class="button-class" type="submit" onclick="handleClick()"&gt;Submit&lt;/button&gt;
+                        </code>
+                    </span>
+                </span>
+            <br><br>
+
+            <li><b>AVOID DEPRECATED ATTRIBUTES</b></li>
+            <br>
+            <span>
+                Certain HTML attributes, such as align, bgcolor, and border, are considered deprecated. It is better to use CSS for styling instead of outdated attributes.
+                <br><br>
+                <b>EXAMPLE</b> (Avoid Deprecated Attributes) <b>:</b>
+                <br>
+                <span class="code1">
+                    <code>
+                        &lt;p style="text-align: center;"&gt;This text is centered.&lt;/p&gt;
+                    </code>
+                </span>
+            </span>
+        </ol>
+    </dd>
+    <br>
+    </dl>
+    <br>
+</body>
+</html>
